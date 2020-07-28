@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/text_label_color"
+                    android:textColor="@color/gray_dark"
+                    android:textSize="@dimen/config_edit_text_size" />
+
+                <EditText
+                    android:id="@+id/text_label_color"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bottom_sheet_edit_box_style"
+                    android:imeOptions="actionNext"
+                    android:inputType="text"
+                    android:textSize="@dimen/config_edit_text_size" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/transparency"
+                    android:textSize="@dimen/config_edit_text_size" />
+
+                <EditText
+                    android:id="@+id/transparency_text_label_color"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bottom_sheet_edit_box_style"
+                    android:imeOptions="actionNext"
+                    android:inputType="number"
+                    android:textSize="@dimen/config_edit_text_size" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/instruction_button_color"
+                    android:textColor="@color/gray_dark"
+                    android:textSize="@dimen/config_edit_text_size" />
+
+                <EditText
+                    android:id="@+id/instruction_continue_button_color"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bottom_sheet_edit_box_style"
+                    android:imeOptions="actionNext"
+                    android:textSize="@dimen/config_edit_text_size" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/transparency"
+                    android:textSize="@dimen/config_edit_text_size" />
+
+                <EditText
+                    android:id="@+id/transparency_instruction_continue_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bottom_sheet_edit_box_style"
+                    android:imeOptions="actionNext"
+                    android:inputType="number"
+                    android:textSize="@dimen/config_edit_text_size" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/instruction_button_text_color"
+                    android:textColor="@color/gray_dark"
+                    android:textSize="@dimen/config_edit_text_size" />
+
+                <EditText
+                    android:id="@+id/instruction_continue_button_text_color"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bottom_sheet_edit_box_style"
+                    android:imeOptions="actionNext"
+                    android:textSize="@dimen/config_edit_text_size" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/transparency"
+                    android:textSize="@dimen/config_edit_text_size" />
+
+                <EditText
+                    android:id="@+id/transparency_instruction_continue_button_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bottom_sheet_edit_box_style"
+                    android:imeOptions="actionNext"
+                    android:inputType="number"
+                    android:textSize="@dimen/config_edit_text_size" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

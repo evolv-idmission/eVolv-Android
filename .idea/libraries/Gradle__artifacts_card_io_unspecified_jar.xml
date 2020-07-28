@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="Gradle: artifacts:card.io:unspecified@jar">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/card.io/build/.transforms/882a78d5c32d01173e450b55644c7f49/jetified-card.io-5.5.1/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/card.io/build/.transforms/882a78d5c32d01173e450b55644c7f49/jetified-card.io-5.5.1/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

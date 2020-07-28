@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "508518999351",
+    "firebase_url": "https://imageprocessingsampleproject.firebaseio.com",
+    "project_id": "imageprocessingsampleproject",
+    "storage_bucket": "imageprocessingsampleproject.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:508518999351:android:f4d8706b8d3ce668",
+        "android_client_info": {
+          "package_name": "com.idmission.libtestproject"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "508518999351-29o14u6a65dp689r88vrv9ar9uc7afpe.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCksp1OOSX8FgD4TXCf_Bzxoh_ZxieeVLU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

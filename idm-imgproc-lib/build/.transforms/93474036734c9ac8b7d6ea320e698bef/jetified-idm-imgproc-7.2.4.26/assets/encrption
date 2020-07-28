@@ -1,0 +1,32 @@
+public void doDecryption(String decryptOutPutFile, byte[] encryptedFileData, byte[] publicKeyData) throws Exception {
+
+    System.out.println("Load the RSA Public Key from File");
+    X509EncodedKeySpec ks = new X509EncodedKeySpec(publicKeyData);
+    KeyFactory kf = KeyFactory.getInstance("RSA");
+    PublicKey pub = kf.generatePublic(ks);
+    System.out.println("Load the AES Secret Key");
+
+    InputStream in = new ByteArrayInputStream(encryptedFileData);
+    Cipher cipher = Cipher.getInstance("RSA/ECB/PKCS1Padding");
+    cipher.init(Cipher.DECRYPT_MODE, pub);
+    byte[] b = new byte[64];
+    in.read(b);
+    byte[] keyb = cipher.doFinal(b);
+    SecretKeySpec skey = new SecretKeySpec(keyb, "AES");
+    System.out.println(" Read the Initialization Vector");
+    byte[] iv = new byte[128 / 8];
+    in.read(iv);
+    IvParameterSpec ivspec = new IvParameterSpec(iv);
+    System.out.println("Decrypt the File Contents");
+    Cipher ci = Cipher.getInstance("AES/CBC/PKCS5Padding");
+    ci.init(Cipher.DECRYPT_MODE, skey, ivspec);
+    try (CipherInputStream cipherIn = new CipherInputStream(in, ci); FileOutputStream fileOutputStream2 = new FileOutputStream(decryptOutPutFile);) {
+
+      byte[] byteBuffer = new byte[1024];
+      int numberOfBytedRead;
+      while ((numberOfBytedRead = cipherIn.read(byteBuffer)) >= 0) {
+        fileOutputStream2.write(byteBuffer, 0, numberOfBytedRead);
+      }
+    }
+    System.out.println("Decryption Done");
+  }

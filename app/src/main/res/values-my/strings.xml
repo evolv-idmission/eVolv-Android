@@ -1,0 +1,808 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">eVolv App</string>
+    <string name="evolve_test_application">eVolv Test Application</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="account_setting">အေကာင့္ ျပင္ဆင္မႈ</string>
+
+    <string name="sdk_version">SDK ဗားရွင္း</string>
+
+    <!-- Navigation drawer list -->
+    <string name="account_setup">စာရင္းဖြင့္ ျပင္ဆင္ျခင္း</string>
+    <string name="process_flow">လုပ္ငန္းစဥ္ စီးဆင္းမႈ</string>
+    <string name="about_us">မိမိတို့ အေၾကာင္း</string>
+
+    <!-- Error Messages -->
+    <string name="save_account_detail_error">စာရင္းအခ်က္အလက္အေသးစိတ္ကို ဦးစြာ သိမ္းပါ</string>
+    <string name="please_enter_url">စာရင္းအခ်က္အလက္အေသးစိတ္ကို ဦးစြာ သိမ္းပါ</string>
+    <string name="id_capture_save_msg">ျပင္ဆင္သတ္မွတ္မႈကို သိမ္းပါ</string>
+
+    <!-- Default Values -->
+    <!--<string name="url">https://evolv.idmission.com/IDS/service/integ/idm/thirdparty/upsert</string>-->
+    <string name="url">https://demo.idmission.com/IDS/service/integ/idm/thirdparty/upsert</string>
+    <string name="product_name">Identity_Validation_and_Face_Matching</string>
+
+    <!--Fields-->
+    <string name="re_capture">ျပန္လည္ ရယူပါ</string>
+    <string name="id_validation">ID အတည္ျပဳျခင္း</string>
+    <string name="face_match">မ်က္နွာယွဥ္တြဲျခင္း</string>
+    <string name="id_validation_face_match">ပုံနွင့္ မ်က္နွာယွဥ္တြဲျခင္း လုပ္ေဆာင္ပါ</string>
+    <string name="id_validation_video_match">ပုံနွင့္ ဗီဒီယို ယွဥ္တြဲျခင္း လုပ္ေဆာင္ပါ</string>
+    <string name="id_details">id အေသးစိတ္အခ်က္အလက္</string>
+    <!--<string name="capture_front">Capture</string>-->
+    <!--<string name="capture_back">Capture</string>-->
+    <!--<string name="face_capture">Capture</string>-->
+    <!--<string name="signature_capture">Capture</string>-->
+    <!--<string name="document_capture">Capture</string>-->
+    <!--<string name="voice_capture">Capture</string>-->
+    <!--<string name="fingerprint_capture">Capture</string>-->
+    <!--<string name="fingerprint_capture_4f">Capture</string>-->
+    <!--<string name="location_capture">Capture</string>-->
+    <!--<string name="video_capture">Capture</string>-->
+    <!--<string name="snippet_capture">Capture</string>-->
+    <string name="result">ရလာဒ္</string>
+    <string name="process_image">ပုံကိုသာ လုပ္ေဆာင္ျခင္း</string>
+    <string name="match_face">မ်က္နွာသာ ယွဥ္တြဲျခင္း</string>
+    <string name="process_image_and_match_face">ပုံနွင့္ မ်က္နွာယွဥ္တြဲျခင္း လုပ္ေဆာင္ပါ</string>
+    <string name="generate_otp">OTP ထုတ္ပါ</string>
+    <string name="verify_otp">OTP အတည္ျပဳပါ</string>
+    <string name="customer_update">Customer မြမ္းမံမႈ</string>
+    <string name="customer_Verification">Customer အတည္ျပုျခင္း</string>
+    <string name="address_matching">လိပ္စာ တိုက္ဆိုင္စိစစ္ျခင္း</string>
+    <string name="address_capture">POA ရယူပါ</string>
+    <string name="show_result_raw_data">ပကတိအခ်က္အလက္အားလုံးကို ျပပါ</string>
+    <string name="raw_data_request">ေတာင္းခံမႈမွ ပကတိ အခ်က္အလက္</string>
+    <string name="raw_data_response">တုံ့ျပန္မႈမွ ပကတိအခ်က္အလက္</string>
+    <string name="clear_data_back_main_page">အခ်က္အလက္အားလုံးကို ရွင္းလင္းျပီး ပင္မစာမ်က္နွာသို့ ျပန္သြားမည္</string>
+    <string name="emp_verification">ဝန္ထမ္း အတည္ျပုျခင္း</string>
+    <string name="emp_enrollment">ဝန္ထမ္း စာရင္းသြင္းျခင္း (မ်က္နွာ ယွဥ္တြဲျခင္း)</string>
+    <string name="back">ေနာက္သို့</string>
+    <string name="generate_token">တိုကင္ ထုတ္ယူပါ</string>
+    <string name="download">ေဒါင္းလုတ္</string>
+    <string name="create_emp_override">ဝန္ထမ္း ဖန္တီးပါ (Override ျပဳလုပ္၍)</string>
+    <string name="create_customer_override">Customer ဖန္တီးပါ  (Override ျပဳလုပ္၍)</string>
+    <string name="verify_emp_override">ဝန္ထမ္း အတည္ျပုပါ  (Override ျပဳလုပ္၍)</string>
+    <string name="verify_customer_override">Customer အတည္ျပုပါ  (Override ျပဳလုပ္၍)</string>
+    <string name="id_validation_with_cus_enroll">Customer စာရင္းသြင္းမႈနွင့္ ID အတည္ျပုျခင္း</string>
+    <string name="id_validation_with_emp_enroll">ဝန္ထမ္း စာရင္းသြင္းမႈနွင့္ ID အတည္ျပုျခင္း</string>
+    <string name="id_face_with_emp_enroll">ဝန္ထမ္း စာရင္းသြင္းမႈ မ်က္နွာ နွင့္ ID အတည္ျပုျခင္း</string>
+    <string name="id_face_with_video_enroll">ဗီဒီယို မွတ္တမ္းတင္မႈ မ်က္နွာ နွင့္ ID အတည္ျပုျခင္း</string>
+    <string name="customer_fp_enrollment_title">Customer အား FP Biometrics ျဖင့္ စာရင္းသြင္းျခင္း</string>
+    <string name="customer_fp_enrollment">လက္ေဗြရာျဖင့္ စာရင္းသြင္းျခင္း (Customer)</string>
+    <string name="employee_fp_enrollment_title">ဝန္ထမ္းအား FP Biometrics ျဖင့္ စာရင္းသြင္းျခင္း</string>
+    <string name="employee_fp_enrollment">လက္ေဗြရာျဖင့္ စာရင္းသြင္းျခင္း (ဝန္ထမ္း)</string>
+    <string name="employee_update">ဝန္ထမ္းကို မြမ္းမံျခင္း</string>
+    <string name="customize_product">ကုန္ပစၥည္း စိတ္ၾကိုက္ျပင္ဆင္ျခင္း</string>
+    <string name="capture">ဓါတ္ပုံရိုက္</string>
+    <string name="initiate">အစပြု</string>
+
+    <!-- Account Setup-->
+    <string name="test_url">စမ္းသပ္ URL</string>
+    <string name="login_id">Login ID</string>
+    <string name="password">စကားဝွက္</string>
+    <string name="merchant_id">Merchant ID</string>
+    <string name="product_id">Product ID</string>
+    <string name="product">ထုတ္ကုန္အမည္</string>
+    <string name="language">ဘာသာစကား</string>
+    <string name="save_account">စာရင္းကို သိမ္းဆည္းပါ</string>
+    <string name="edit_account">Edit Account</string>
+    <string name="debaug_mode">Debug Mode</string>
+    <string name="off">ပိတ္</string>
+    <string name="on">ဖြင့္</string>
+    <string name="initialize">စတင္</string>
+    <string name="enter_url">URL ထည့္ပါ</string>
+    <string name="enter_login_id">Login Id ထည့္ပါ</string>
+    <string name="enter_password">စကားဝွက္ ျဖည့္ပါ</string>
+    <string name="enter_merchant_id">Merchant ID ထည့္ပါ</string>
+    <string name="enter_product_id">Product ID ထည့္ပါ</string>
+    <string name="enter_product_name">ကုန္ပစၥည္းအမည္ ထည့္ပါ</string>
+    <string name="camera_permission">ကင္မရာခြင့္ျပုခ်က္ေပးရန္ လိုအပ္ပါသည္။</string>
+
+    <!-- Card Capture-->
+    <string name="captute">ဓါတ္ပုံရိုက္</string>
+    <string name="back_capture">&lt;  ေနာက္သို့</string>
+    <string name="next_capture">ေရွ့သို့  &gt;</string>
+    <string name="card_details">ကတ္ အေသးစိတ္အခ်က္အလက္:</string>
+
+    <!-- ID Capture-->
+    <string name="configuration">ျပင္ဆင္သတ္မွတ္ျခင္း</string>
+    <string name="id_outline_color">Id အသားေပး အေရာင္</string>
+    <string name="transparency">ထင္သာျမင္သာရွိမႈ (၁ - ၁၀၀)</string>
+    <string name="detected_id_outline_color">ရယူထားေသာ Id အေရာင္</string>
+    <string name="color_outside_outline">အျပင္ဘက္ အသားေပး အေရာင္</string>
+    <string name="detected_color_outside_outline">ရယူထားေသာ အျပင္ဘက္ အသားေပး အေရာင္</string>
+    <string name="light_threshold">အလင္း အေမွာင္</string>
+    <string name="min_focus_threshold">အနည္းဆုံး အလင္းအေမွာင္</string>
+    <string name="max_focus_threshold">အမ်ားဆုံး အလင္းအေမွာင္</string>
+    <string name="glare_percentage">ေတာက္ပမႈ ပမာဏ</string>
+    <string name="enable_capture_button_time">ခလုတ္နွိပ္ရိုက္ယူသည့္ အခ်ိန္ (ဒုတိယ) ကို အသုံးျပဳမည္</string>
+    <string name="max_image_size">အမ်ားဆုံး ပုံအရြယ္ (kb)</string>
+    <string name="image_height">ပုံအျမင့္</string>
+    <string name="image_width">ပုံအက်ယ္</string>
+    <string name="header_text_label_size">ေခါင္းစီးစာသာအရြယ္</string>
+    <string name="text_label_size">စာသား အရြယ္</string>
+    <string name="text_font_type">စာသားပုံစံ</string>
+    <string name="text_font_style">စာသားပုံစံစတိုင္</string>
+    <string name="header_text_font_type">ေခါင္းစီးစာသား ပုံစံအမ်ိုးအစား</string>
+    <string name="header_text_font_style">ေခါင္းစီးစာသား ပုံစံစတိုင္</string>
+    <string name="text_label_color">စာသားအေရာင္</string>
+    <string name="header_text_label_color">ေခါင္းစီးစာသား အေရာင္</string>
+    <string name="back_button_color">ေနာက္သို့သြားရန္ ခလုတ္အေရာင္</string>
+    <string name="retry_button_color">ျပန္ၾကိုးစားပါ ခလုတ္အေရာင္</string>
+    <string name="retry_button_border_color">ျပန္ၾကိုးစားပါ ခလုတ္အနားသတ္ အေရာင္</string>
+    <string name="confirm_button_color">အတည္ျပုပါ ခလုတ္အေရာင္</string>
+    <string name="confirm_button_style">အတည္ျပုပါခလုတ္စတိုင္</string>
+    <string name="instruction_button_color">ညြွန္ၾကားခ်က္ ခလုတ္ အေရာင္</string>
+    <string name="instruction_button_text_color">ညြွန္ၾကားခ်က္ခလုတ္ စာသားအေရာင္</string>
+    <string name="instruction_preview_background_color">နောက်ခံအရောင်နောက်ခံအရောင်</string>
+    <string name="id_capture_border">ID ရိုက္ယူျခင္း အနားသတ္</string>
+    <string name="show_capture_label">ရယူသည့္ စာသားကို ျပပါ</string>
+    <string name="no">မဟုတ္</string>
+    <string name="yes">ဟုတ္</string>
+    <string name="enter_capture_label">ရယူသည့္ စာသားကို ထည့္သြင္းပါ</string>
+    <string name="default_orientation">မူလပုံစံ အလွည့္အေျပာင္း</string>
+    <string name="portrait">ေဒါင္လိုက္</string>
+    <string name="landscape">ျမင္ကြင္းက်ယ္</string>
+    <string name="show_instruction_screen">ညြွန္ျပခ်က္ကို ျပပါ</string>
+    <string name="detect_hand_type">လက်အမျိုးအစား</string>
+    <string name="show_title_image">ေခါင္းစီးပုံကို ျပပါ</string>
+    <string name="id_capture_title_alignment">Id ရယူထားသည့္ ေခါင္းစီး ခ်ိန္ညွိျခင္း</string>
+    <string name="hide_id_capture_title">Id ရယူထားသည့္ ေခါင္းစီးကို ေဖ်ာက္ပါ</string>
+    <string name="id_capture_hint_message_alignment">Id ရယူထားသည့္ အၾကံေပးစာကို ခ်ိန္ညွိျခင္း</string>
+    <string name="hide_id_hint_message">Id အၾကံေပးစာကို ေဖ်ာက္ပါ</string>
+    <string name="id_capture_title_image_alignment">Id ရယူထားသည့္ ေခါင္းစီးပုံကို ခ်ိန္ညွိျခင္း</string>
+    <string name="hide_id_title_image">Id ေခါင္းစီးပုံကို ေဖ်ာက္ပါ</string>
+    <string name="id_capture_label">id ရယူထားသည့္ တံဆိပ္</string>
+    <string name="english_label">အဂၤလိပ္ အလံ</string>
+    <string name="add_label">အလံပုံ ထည့္ရန္</string>
+    <string name="save">သိမ္းဆည္းမည္</string>
+    <string name="reset">အစက ျပန္စမည္</string>
+    <string name="top">ထိပ်တန်း</string>
+    <string name="center">အလယ်ဗဟို</string>
+    <string name="bottom">အောကျခွေ</string>
+    <string name="left">လက်ဝဲ</string>
+    <string name="right">မှန်သော</string>
+    <string name="capture_button_color">Button အရောင်ဖမ်းယူပါ</string>
+    <string name="enable_shadow">Shadow ကို Enable လုပ်ပါ</string>
+
+    <string name="default_font_type">ပျက်ကွက်</string>
+    <string name="default_bold">DEFAULT_BOLD</string>
+    <string name="san_serif">SANS_SERIF</string>
+    <string name="serif">SERIF</string>
+    <string name="monospace">MONOSPACE</string>
+
+    <string name="normal">သာမန်</string>
+    <string name="bold">ရဲရင့်</string>
+    <string name="italic">စာလုံးစောင်း</string>
+    <string name="bold_italic">စာလုံးစောင်းရဲရင့်</string>
+
+    <string name="thin">ပါးသော</string>
+    <string name="thick">ထူသော</string>
+
+    <string name="none">အဘယ်သူမျှမ</string>
+    <string name="title_image_1">ခေါင်းစဉ် Image ကို 1</string>
+
+    <string name="low">အနိမ့်</string>
+    <string name="medium">အလယ်အလတ်</string>
+    <string name="all">အားလုံး</string>
+    <string name="zero">သုည</string>
+
+    <!-- 4F Capture-->
+    <string name="focus_threshold">အမ်ားဆုံး အလင္းအေမွာင္</string>
+    <string name="glare_threshold">ေတာက္ပမႈ ပမာဏ</string>
+    <string name="no_of_finger_to_check_focus">ျမင္ကြင္းကို စစ္ေဆးရမည့္ လက္အေရအတြက္</string>
+    <string name="index_finger_min">လက္ညွိုး (အနည္းဆုံး)</string>
+    <string name="index_finger_max">လက္ညွိုး (အမ်ားဆုံး)</string>
+    <string name="middle_finger_Min">လက္ခလယ္ (အနည္းဆုံး)</string>
+    <string name="middle_finger_Max">လယ္ခလယ္ (အမ်ားဆုံး)</string>
+    <string name="ring_finger_min">လက္သန္းၾကြယ္ (အနည္းဆုံး)</string>
+    <string name="ring_finger_max">လက္သန္းၾကြယ္ (အမ်ားဆုံး)</string>
+    <string name="baby_finger_min">လက္သန္း (အနည္းဆုံး)</string>
+    <string name="baby_finger_max">လက္သန္း (အမ်ားဆုံး)</string>
+    <string name="save_image_width">ပုံအက်ယ္ကို သိမ္းပါ</string>
+    <string name="save_image_height">ကြော်ငြာကို Save လုပ်ရန် Image ကိုအမြင့်</string>
+    <string name="aggresiveness_factor">ၾကမ္းတမ္းသည့္ အခ်က္</string>
+    <string name="minimum_NFIQ_value">အနိမ့္ဆုံး NFIQ တန္ဖိုး</string>
+    <string name="device_timeout">စက္၏ Timeout</string>
+    <string name="image_size">အမ်ားဆုံး ပုံအရြယ္ (kb)</string>
+    <string name="select_finger">လက္ေခ်ာင္း ေရြးပါ</string>
+    <string name="clear">ဖယ္ရွားပါ</string>
+    <string name="clear_fp_data">လက္ေဗြရာ အခ်က္အလက္ကို ဖယ္ရွားပါ</string>
+    <string name="enter_finger_count">လက္ေခ်ာင္း အေရအတြက္ကို ထည့္သြင္းပါ</string>
+    <string name="enter_glare_percentage">ေတာက္ပမႈ ပမာဏကို ျဖည့္ပါ</string>
+    <string name="enter_focus_threshold">ျပတ္သားမႈ အလင္းအေမွာင္ကို ထည့္ပါ</string>
+    <string name="zoom">Zoom</string>
+    <string name="ridge_width">Ridge အကျယ်</string>
+
+    <!-- Selfie Capture-->
+    <string name="face_image_type">မ်က္နွာပုံ အမ်ိုးအစား</string>
+    <string name="face_detection_threshold">မ်က္နာ သိရွိမွု ပမာဏ</string>
+    <string name="launch_front_camera">အေရွ့ ကင္မရာကို ဖြင့္ပါ</string>
+    <string name="toggle_camera">ကင္မရာကို ေျပာင္းပါ</string>
+    <string name="show_preview_screen">အစမ္းျပကြက္ကို ျပပါ</string>
+    <string name="face_outline_color">မ်က္နွာျပင္ေကာက္ေၾကာင္း အေရာင္</string>
+    <string name="detect_face_outline_color">မ်က္နွာျပင္ ေကာက္ေၾကာင္း သိရွိမႈ အေရာင္</string>
+    <string name="outside_color_of_face_outLine">မ်က္နွာျပင္ေကာက္ေၾကာင္း ျပင္ပ အေရာင္</string>
+    <string name="outside_detected_color_of_face_outline">ရရွိသည့္ မ်က္နွာ္ျပင္ ျပင္ကေကာက္ေၾကာင္း အေရာင္</string>
+    <string name="face_title_alignment">မ်က္နွာ ေခါင္းစီး ခ်ိန္ညွိမႈ</string>
+    <string name="hide_face_title">မ်က္နွာ ေခါင္းစီကို ေဖ်ာက္ပါ</string>
+    <string name="face_hint_message_alignment">မ်က္နွာျပင္ အၾကံျပဳ မက္ေဆ့ခ်္ ခ်ိန္ညွိမႈ</string>
+    <string name="hide_face_hint_message">မ်က္နွာျပင္ အၾကံျပဳ မက္ေဆ့ခ်္ကို ေဖ်ာက္ပါ</string>
+    <string name="face_hint_icon_alignment">မ်က္နွာျပင္ အၾကံျပဳ ရုပ္ပုံငယ္ကို ခ်ိန္ညွိျခင္း</string>
+    <string name="hide_face_hint_icon">မ်က္နွာဆိုင္ရာ အၾကံျပဳ ရုပ္ပုံငယ္ကို ေဖ်ာက္ပါ</string>
+    <string name="face_title_image_alignment">မ်က္နွာပုံ ေခါင္းစီး ခ်ိန္ညွိမႈ</string>
+    <string name="hide_face_title_image">မ်က္နွာပုံ ေခါင္းစီးကို ေဖ်ာက္ပါ</string>
+    <string name="show_custom_overlay">ထုံးစံ overlay ကိုပြရန်</string>
+    <string name="face_capture_label">မ်က္နွာ ရိုက္ယူရန္ စာသား</string>
+    <string name="spanish_label">စပိန္ အလံ</string>
+    <string name="face_contours">မ်က္ႏွာေကာက္ေၾကာင္း</string>
+    <string name="title_image">ေခါင္းစီပုံေရြးပါ</string>
+    <string name="live_face_not_detected">တိုက်ရိုက်မျက်နှာမတွေ့ပါ</string>
+
+    <!-- video Capture-->
+    <string name="video_recording_time">ဗီဒီယို ရိုက္ကူးခ်ိန္ (စကၠန့္)</string>
+    <string name="text_data">စာသားအခ်က္အလက္ ျဖည့္ပါ</string>
+
+    <!-- voice Capture-->
+    <string name="voice_recording_time">အသံသြင္းခ်ိန္ (စကၠန့္)</string>
+    <string name="enter_time">အခ်ိန္ထည့္ပါ</string>
+    <string name="voice_button_color">အရောင် button ကို</string>
+    <string name="voice_background_color">နောက်ခံအရောင်</string>
+    <string name="voice_title_label_on_top">ထိပ်တန်းခေါင်းစဉ်တံဆိပ်</string>
+    <string name="voice_display_position">UI Display အနေအထား</string>
+    <string name="voice_auto_play">အလိုအလျောက်ကစားခြင်း</string>
+    <string name="voice_text_label_color">စာသားတံဆိပ်အရောင်</string>
+    <string name="voice_title_label_color">ခေါင်းစဉ်တံဆိပ်အရောင်</string>
+    <string name="voice_title_label_size">ခေါင်းစဉ်တံဆိပ်အရွယ်အစား</string>
+    <string name="voice_text_label_size">စာသားတံဆိပ်အရွယ်အစား</string>
+    <string name="voice_counter_label_size">တန်ပြန်တံဆိပ်အရွယ်အစား</string>
+    <string name="voice_recording_label">အသံမှတ်တမ်းတင်တံဆိပ်</string>
+
+    <!-- Customize product-->
+    <string name="select_group">အဖြဲ့ကို ေရြးပါ</string>
+    <string name="enter_group_name">အဖြဲ့ အမည္ေပးပါ</string>
+    <string name="select_field_name">နယ္ပယ္အမည္ ေရြးပါ</string>
+    <string name="enter_field_name">နယ္ပယ္ အမည္ ေရးသြင္းပါ</string>
+    <string name="select_field_value">နယ္ပယ္ တန္ဖိုးေရြးပါ</string>
+    <string name="enter_field_value">နယ္ပယ္တန္ဖိုး ထည့္ပါ</string>
+    <string name="add">ထည့္ပါ</string>
+    <string name="product_config">ထုတ္ကုန္ ျပင္ဆင္မႈ</string>
+
+    <!-- Data Capture-->
+    <string name="manual_review_required">ကိုယ္တိုင္ ဆန္းစစ္ရန္ လိုအပ္ပါသည္</string>
+    <string name="bypass_age_validation">အသက္ အတည္ျပုျခင္းကို ေက်ာ္မည္</string>
+    <string name="bypass_name_matching">အမည္စိစစ္ျခင္းကို ေက်ာ္မည္</string>
+    <string name="deduplication_required">တူညီမႈ မရွိရန္ လိုအပ္ပါသည္</string>
+    <string name="need_immediate_response">ချက်ချင်းတုံ့ပြန်မှုမလိုအပ်</string>
+    <string name="unique_customer_number">မတူကြဲျပားသည့္ Customer နံပါတ္</string>
+    <string name="customer_name">Customer အမည္</string>
+    <string name="service_id">ဝန္ေဆာင္မွု ID</string>
+    <string name="customer_type">Customer အမ်ိုးအစား</string>
+    <string name="customer_phone">Customer ဖုန္း</string>
+    <string name="customer_email">Customer အီးေမးလ္</string>
+    <string name="customer_attribute">Customer ထူးျခားမႈ</string>
+    <string name="unique_merchant_number">မတူကြဲျပားသည့္ Merchant နံပါတ္</string>
+    <string name="unique_employee_number">မတူကြဲျပားသည့္  ဝန္ထမ္း နံပါတ္</string>
+    <string name="unique_employee_code">မတူကြဲျပားသည့္  ဝန္ထမ္းကုတ္နံပါတ္</string>
+    <string name="old_client_customer_number">ယခင္ Customer နံပါတ္</string>
+    <string name="gender">လိင္အမ်ိုးအစား</string>
+    <string name="address_line_1">လိပ္စာ - ၁</string>
+    <string name="address_line_2">လိပ္စာ - ၂</string>
+    <string name="country">တိုင္းျပည္</string>
+    <string name="state">ျပည္နယ္</string>
+    <string name="city">ျမို့</string>
+    <string name="postal_code">စာပို့သေကၤတ</string>
+    <string name="capture_sec_id">Secondary Id ကိုဖမ်းယူပါ</string>
+    <string name="process_sec_id">Process ကို Secondary Id</string>
+
+    <!-- Document Capture-->
+    <string name="capture_front">အေရွ့ဖက္ကို ရိုက္ယူ</string>
+    <string name="enter_document_name">စာရြက္အမည္ ရိုက္ထည့္ပါ</string>
+
+    <!-- Employee Data-->
+    <string name="employee_code">ဝန္ထမ္း ကုတ္နံပတ္</string>
+    <string name="employee_type">ဝန္ထမ္း အမ်ိုးအစား</string>
+    <string name="employee_login_id">ဝန္ထမ္း Login Id</string>
+    <string name="employee_email">ဝန္ထမ္း အီးေမးလ္</string>
+    <string name="employee_company_id">ဝန္ထမ္း ကုမၸဏီ Id</string>
+    <string name="employee_department">ဝန္ထမ္း တာဝန္ထမ္းေဆာင္သည့္ ဌာန</string>
+    <string name="employee_name">ဝန္ထမ္း အမည္</string>
+    <string name="employee_mobile_no">ဝန္ထမ္း၏ မိုဘိုင္းဖုန္းနံပါတ္</string>
+    <string name="marital_status">အိမ္ေထာင္ေရး အေျခအေန</string>
+    <string name="employee_country">ဝန္ထမ္း၏ နိုင္ငံ</string>
+    <string name="employee_address_line_1">ဝန္ထမ္း၏ လိပ္စာ ၁</string>
+    <string name="employee_address_line_2">ဝန္ထမ္း၏ လိပ္စာ ၂</string>
+    <string name="zip_code">စာပို့သေကၤတ</string>
+    <string name="spouse_name">အိမ္ေထာင္ဖက္ အမည္</string>
+    <string name="number_of_children">ကေလး အေရအတြက္</string>
+
+    <!-- Final steps-->
+    <string name="final_step">ေနာက္ဆုံးအဆင့္</string>
+    <string name="verify">  အတည္ျပဳပါ</string>
+    <string name="extract">  ထုတ္ယူပါ </string>
+    <string name="final_submit">  ေနာက္ဆုံးပိတ္ တင္သြင္းပါ </string>
+    <string name="clear_form_key">  Form Key ကို ဖယ္ရွားပါ </string>
+    <string name="please_wait_msg">ကျေးဇူးပြုပြီးခဏစောင့်ပါ...</string>
+
+    <!-- Generate OTP-->
+    <string name="enter_email_id">အီးေမးလ္ Id ထည့္သြင္းပါ</string>
+    <string name="enter_mobile_number">ဖုနး္နံပါတ္ ထည့္ပါ</string>
+    <string name="select_notification_type">သတိေပးမႈ ပုံစံေရြးခ်ယ္ပါ</string>
+
+    <!-- Help Dialog-->
+    <string name="help">အကူအညီ</string>
+    <string name="okay">ေကာင္းျပီ</string>
+
+    <!-- Id Details-->
+    <string name="select_id_type">ID အမ်ိုးအစား ေရြးပါ </string>
+    <string name="select_secondary_id_type">က Secondary ID ကိုအမျိုးအစားကိုရွေးချယ်ပါ </string>
+    <string name="select_id_country">ID နိုင္ငံ ေရြးပါ </string>
+    <string name="select_secondary_id_country">က Secondary ID ကိုနိုင်ငံကိုရွေးချယ်ပါ </string>
+    <string name="select_id_state">ID ကိုပြည်နယ်ကိုရွေးချယ်ပါ</string>
+    <string name="enter_iso_code">ပြည်နယ်နှစ်ခုစာတစ်စောင်က ISO ကုဒ်ရိုက်ထည့်ပါ</string>
+
+    <!-- POA Capture-->
+    <string name="address_1">လိပ္စာ - ၁</string>
+    <string name="address_2">လိပ္စာ - ၂</string>
+
+    <!-- Process flow-->
+    <string name="select_service">ဝန္ေဆာင္မႈကို ေရြးပါ</string>
+    <string name="id_validation_and_face_Match">ID အတည္ျပုျခင္းနွင့္ မ်က္နွာယွဥ္တြဲျခင္း - ဝန္ေဆာင္မႈ ID</string>
+    <string name="need_additional_features">ထပ္တိုးလုပ္ေဆာင္ခ်က္ေတြ လိုအပ္ပါသလား။</string>
+    <string name="signature_capture">လက္မွတ္ရယူျခင္း</string>
+    <string name="document_capture">စာရြက္ကို ဓါတ္ပုံရိုက္ယူ</string>
+    <string name="voice_capture">အသံ ရယူျခင္း</string>
+    <string name="fingerprint_capture">လက္ေဗြရာ ရယူျခင္း</string>
+    <string name="fingerprint_capture_4F">လက္ေဗြရာ ရယူျခင္း (4F)</string>
+    <string name="location_capture">တည္ေနရာ/ GPS ရယူျခင္း</string>
+    <string name="video_capture">ဗီဒီယို ရိုက္ျခင္း</string>
+    <string name="image_snippet_OCR">ရုပ္ပုံမွ OCR ျဖင့္ရယူျခင္း</string>
+    <string name="barcode_scan">Barcode ဖတ္ယူျခင္း</string>
+    <string name="card_capture">ကတ္ကို ဓါတ္ပုံရိုက္ျခင္း</string>
+    <string name="slant_capture">Slant အိုင်ဒီကိုဖမ်းယူ</string>
+    <string name="video_conference">ဗီဒီယိုဆက်သွယ်။ လုပ်သောအစည်းအဝေ</string>
+    <string name="capture_secondary_id">က Secondary ID ကို Capture</string>
+    <string name="capture_secondary_id_back">secondary ID ကိုပြန်သွားရန်</string>
+    <string name="capture_secondary_id_front">secondary ID ကိုတပ်ဦး</string>
+    <!--<string name="INITIALIZE">INITIALIZE</string>-->
+    <string name="continue_btn">ဆက်လက်</string>
+
+    <!-- Result View-->
+    <string name="done">ျပီးဆုံးပါျပီ</string>
+    <string name="download_on">အပေါ်ကိုဒေါင်းလုဒ်</string>
+
+    <!-- Splash screen-->
+    <string name="splash_screen">ရေပက် ဖန်သားပြင်</string>
+    <string name="version">ဗားရွင္း</string>
+
+    <!-- Snippet capture-->
+    <string name="add_field">နယ္ပယ္ ေပါင္းထည့္ျခင္း</string>
+    <string name="enable_capture_button">ရယူမႈခလုတ္ကို ခြင့္ျပုပါ</string>
+    <string name="enable_capture_label">ရယူသည့္ စာသားကို ထည့္သြင္းပါ</string>
+    <string name="fields">နယ္ပယ္မ်ား </string>
+    <string name="fields_blank_msg">နယ္ပယ္အမည္ကို ခ်န္မထားပါနွင့္</string>
+    <string name="please_add_field">ေက်းဇူးျပဳ၍ နယ္ပယ္ေပါင္းထည့္ပါ</string>
+    <string name="snippet_result_data">အတိုအထွာရလဒ်မှာ Data</string>
+
+    <!-- Verify OTP-->
+    <string name="enter_otp">OTP ျဖည့္ပါ</string>
+
+    <!--View Pager-->
+    <string name="capture_id_front_tab">ID အေရွ့ဘက္ကို ရယူပါ</string>
+    <string name="capture_id_back_tab">ID ကို Back ကိုဖမ်းဆီးဖို့</string>
+    <string name="selfie_capture_tab">ဆယ္ဖီရိုက္</string>
+    <string name="signature_capture_tab">လက္မွတ္ရယူျခင္း</string>
+    <string name="document_capture_tab">စာရြက္ကို ဓါတ္ပုံရိုက္ယူ</string>
+    <string name="voice_capture_tab">အသံ ရယူျခင္း</string>
+    <string name="fingerprint_capture_tab">လက္ေဗြရာ ရယူျခင္း</string>
+    <string name="fingerprint_capture_4f_tab">လက္ေဗြရာ ရယူျခင္း (4F)</string>
+    <string name="location_capture_tab">တည္ေနရာ/ GPS ရယူျခင္း</string>
+    <string name="video_capture_tab">ဗီဒီယို ရိုက္ျခင္း</string>
+    <string name="image_snippet_OCR_tab">ရုပ္ပုံမွ OCR ျဖင့္ရယူျခင္း</string>
+    <string name="barcode_scan_tab">Barcode ဖတ္ယူျခင္း</string>
+    <string name="poa_capture_tab">POA ရယူပါ</string>
+    <string name="selfie_employee_tab">ဝန္ထမ္း ဆယ္ဖီရိုက္ပါ</string>
+    <string name="selfie_customer_tab">Customer ကို ဆယ္ဖီရိုက္ပါ</string>
+    <string name="define_product_tab">ထုတ္ကုန္ကို သတ္မွတ္ပါ</string>
+    <string name="card_capture_tab">ကတ္ကို ဓါတ္ပုံရိုက္ျခင္း</string>
+    <string name="generate_OTP_data_tab">OTP အခ်က္အလက္ ထုတ္ပါ</string>
+    <string name="verify_OTP_data_tab">OTP အခ်က္အလက္ကို အတည္ျပဳပါ</string>
+    <string name="data_captur_tab">အခ်က္အလက္ ရယူမႈ</string>
+    <string name="employee_data_tab">ဝန္ထမ္း အခ်က္အလက္</string>
+    <string name="slant_capture_tab">Slant အိုင်ဒီကိုဖမ်းယူ</string>
+    <string name="video_conference_tab">ဗီဒီယိုဆက်သွယ်။ လုပ်သောအစည်းအဝေး</string>
+    <string name="sec_id_details_tab">အလယ်တန်း ID အသေးစိတ်</string>
+    <string name="capture_sec_id_front_tab">က Secondary ID ကိုရှေ့ Capture</string>
+    <string name="capture_sec_id_back_tab">က Secondary ID ကို Back ကို Capture</string>
+    <string name="auto_fill_tab">အလိုအလျောက်ဖြည့်ပါ</string>
+
+    <!-- Location-->
+    <string name="location">တည္ေနရာ</string>
+    <string name="latitude">လတၱီတြတ္ :</string>
+    <string name="longitude">ေလာင္ဂ်ီက်ု :</string>
+
+    <!-- Service Id & Descriptions-->
+    <string name="idv_face_match">10 IDV+မ်က္နွာယွဥ္တြဲျခင္း</string>
+    <string name="idv_only">20 IDV သာ</string>
+    <string name="idv_only_cust">25 IDV Only w/Cust Enroll</string>
+    <string name="idv_only_emp">30 IDV Only w/Emp Enroll</string>
+    <string name="idv_face_match_cust">50 IDV+မ်က္နွာယွဥ္တြဲျခင္း w/Cust Enroll</string>
+    <string name="idv_face_match_emp">55 IDV+မ်က္နွာယွဥ္တြဲျခင္း w/Emp Enroll</string>
+    <string name="face_match_cus">60 မ်က္နွာယွဥ္တြဲျခင္း သီးသန့္ w/Cust Enroll</string>
+    <string name="face_match_only">65 မ်က္နွာယွဥ္တြဲျခင္းသာ</string>
+    <string name="customer_update_service">70 Customer မြမ္းမံမႈ</string>
+    <string name="employee_update_service">75 ဝန္ထမ္းကို မြမ္းမံျခင္း</string>
+    <string name="idv_face_match_cust_enroll_77">77 IDV+Face Match w/Cust Enroll</string>
+    <string name="idv_face_match_cust_enroll_78">78 IDV+Face Match w/Cust Enroll</string>
+    <string name="idv_face_match_cust_minor">80 IDV+Face Match w/Cust Minor Enroll</string>
+    <string name="customer_verification">100 Customer အတည္ျပုျခင္း</string>
+    <string name="customer_verification_105">105 Customer အတည္ျပုျခင္း</string>
+    <string name="idv_video_match">155 IDV+ဗီဒီယို တိုက္ဆိုင္စစ္ေဆးျခင္း</string>
+    <string name="idv_video_match_cust">160 IDV+ဗီဒီယို တိုက္ဆိုင္စစ္ေဆးျခင္း w/Cust Enroll</string>
+    <string name="idv_video_match_emp">165 IDV+ဗီဒီယို တိုက္ဆိုင္စစ္ေဆးျခင္း w/Emp Enroll</string>
+    <string name="cust_enroll_biometrics">175 Cust Enroll w/Biometrics</string>
+    <string name="emp_enroll_biometrics">180 Emp Enroll w/Biometrics</string>
+    <string name="address_processing">200 လိပ္စာ လုပ္ေဆာင္ျခင္း</string>
+    <string name="employee_verification">300 ဝန္ထမ္း အတည္ျပုျခင္း</string>
+    <string name="employee_verification_305">305 ဝန္ထမ္း အတည္ျပုျခင္း</string>
+    <string name="face_match_only_emp">310 မ်က္နွာယွဥ္တြဲျခင္း သီးသန့္  w/Emp Enroll</string>
+    <string name="create_customer_override_service">320 Customer ဖန္တီးပါ  (Override ျပဳလုပ္၍)</string>
+    <string name="create_employee_override_service">330 ဝန္ထမ္း ဖန္တီးပါ (Override ျပဳလုပ္၍)</string>
+    <string name="id_validation_face_match_primary_id">360 ID အတည္ျပုျခင္းနွင့္ မ်က္နွာယွဥ္တြဲျခင္း - (ပင္မ ID)</string>
+    <string name="id_validation_face_match_secondary_id">361 ID အတည္ျပုျခင္းနွင့္ မ်က္နွာယွဥ္တြဲျခင္း (ဒုတိယတန္း ID)</string>
+    <string name="otp_generation">400 OTP ထုတ္ယူျခင္း</string>
+    <string name="token_generation">401 တိုကင္ ထုတ္ယူျခင္း</string>
+    <string name="otp_verification">410 OTP အတည္ျပုျခင္း</string>
+    <string name="customer_search">186 ဖောက်သည်ရှာရန်</string>
+    <string name="employee_search">191 ဝန်ထမ်းရှာရန်</string>
+    <string name="idv_video_conf_match">505 IDV + ဗွီဒီယိုညီလာခံပွဲစဉ်</string>
+    <string name="video_conf_match">500 ဗီဒီယိုကွန်ဖရ</string>
+    <string name="idv_video_conf_cust_match">510 IDV + ဗွီဒီယိုညီလာခံပွဲစဉ် + ဖောက်သည်ကျောင်းအပ်</string>
+    <string name="idv_video_conf_emp_match">515 IDV + ဗွီဒီယိုညီလာခံပွဲစဉ် + ထမ်းကျောင်းအပ်</string>
+    <string name="identify_cus_with_biometrics">185 biometric နှင့်အတူဖောက်သည်ခွဲခြားသတ်မှတ်</string>
+    <string name="identify_emp_with_biometrics">190 biometric နှင့်အတူန်ထမ်းကိုခွဲခြားသတ်မှတ်</string>
+    <string name="auto_fill_service">620 Auto Fill(MRZ, BARCODE) </string>
+    <string name="offline_face_service">660 အော့ဖ်လိုင်းတိုက်ရိုက်မျက်နှာ</string>
+
+    <string name="idv_face_match_des">စာရြက္စာတမ္း ID ကို ရယူျခင္း၊ ID ကိုအတည္ျပုျခင္းနွင့္ ေန့စြဲရယူျခင္း ထို့အျပင္ ဆယ္ဖီရိုက္၍ ၎အား ID မွ ပုံနွင့္ တိုက္ဆိုင္စစ္ေဆးျခင္း</string>
+    <string name="idv_only_des">စာရြက္စာတမ္း ID ကို ရယူျခင္း၊ ID ကိုအတည္ျပုျခင္းနွင့္ ေန့စြဲရယူျခင္း</string>
+    <string name="idv_only_cust_des">စာရြက္စာတမ္း ID ကို ရယူျခင္း၊ ID ကိုအတည္ျပုျခင္းနွင့္ ေန့စြဲရယူျခင္း ထို့အျပင္ customer စာရင္းသြင္းရန္ မည္သည့္ biometric ကို မဆိုရယူရမည္။</string>
+    <string name="idv_only_emp_des">စာရြက္စာတမ္း ID ကို ရယူျခင္း၊ ID ကိုအတည္ျပုျခင္းနွင့္ ေန့စြဲရယူျခင္း ထို့အျပင္ customer စာရင္းသြင္းရန္ မည္သည့္ biometric ကို မဆိုရယူရမည္။</string>
+    <string name="idv_face_match_cust_des">စာရြက္စာတမ္း ID ကို ရယူျခင္း၊ ID ကိုအတည္ျပုျခင္းနွင့္ ေန့စြဲရယူျခင္း ထို့အျပင္ ဆယ္ဖီရိုက္၍ ၎အား ID မွ ပုံနွင့္ တိုက္ဆိုင္စစ္ေဆးျပီး ကိုက္ညီပါက ရယူထားသည့္ biometrics မ်ားနွင့္အတူ customer အား စာရင္းသြင္းရမည္။</string>
+    <string name="idv_face_match_emp_des">ID စာရြက္စာတမ္းမ်ား ရယူ၍ ID ကိုအတည္ျပုျပီး ၎မွ အခ်က္အလက္မ်ားကို ထုတ္နႈတ္ယူရမည္။ ထို့အျပင္ ဆယ္ဖီရိုက္၍ ၎အား ID မွ ပုံနွင့္ တိုက္ဆိုင္စစ္ေဆးျပီး ကိုက္ညီပါက ရယူထားသည့္ biometrics မ်ားနွင့္အတူ customer အား စာရင္းသြင္းရမည္။</string>
+    <string name="face_match_cus_des">ID စာရြက္စာတမ္းမ်ား ရယူျပီး customer ကို ဆယ္ဖီျပီး  ၎အား ID မွ ပုံနွင့္ တိုက္ဆိုင္စစ္ေဆးပါ။ ကိုက္ညီပါက customer အား စာရင္းသြင္းပါ။</string>
+    <string name="face_match_only_des">ID စာရြက္စာတမ္းမ်ား ရယူျပီး customer ကို ဆယ္ဖီျပီး  ၎အား ID မွ ပုံနွင့္ တိုက္ဆိုင္စစ္ေဆးပါ။</string>
+    <string name="customer_update_service_des">ယခင္ စာရင္းသြင္းထားသည့္ customer မွတ္တမ္းကို မြမ္းမံရန္အတြက္ မည္သည့္ customer အခ်က္အလက္ အသစ္၊ မြမ္းမံမွုကိုမဆို ရယူရမည္။</string>
+    <string name="employee_update_service_des">ယခင္ စာရင္းသြင္းထားသည့္ ဝန္ထမ္း၏ မွတ္တမ္းကို မြမ္းမံရန္အတြက္ မည္သည့္ ဝန္ထမ္း၏ အခ်က္အလက္ အသစ္၊ မြမ္းမံမွုကိုမဆို ရယူရမည္။</string>
+    <string name="idv_face_match_cust_enroll_77_des">စာရြက္စာတမ္း ID ကို ရယူျခင္း၊ ID ကိုအတည္ျပုျခင္းနွင့္ ေန့စြဲရယူျခင္း ထို့အျပင္ ဆယ္ဖီရိုက္၍ ၎အား ID မွ ပုံနွင့္ တိုက္ဆိုင္စစ္ေဆးျပီး ကိုက္ညီပါက ရယူထားသည့္ biometrics မ်ားနွင့္အတူ customer အား စာရင္းသြင္းရမည္။</string>
+    <string name="idv_face_match_cust_enroll_78_des">စာရြက္စာတမ္း ID ကို ရယူျခင္း၊ ID ကိုအတည္ျပုျခင္းနွင့္ ေန့စြဲရယူျခင္း ထို့အျပင္ ဆယ္ဖီရိုက္၍ ၎အား ID မွ ပုံနွင့္ တိုက္ဆိုင္စစ္ေဆးျပီး ကိုက္ညီပါက ရယူထားသည့္ biometrics မ်ားနွင့္အတူ customer အား စာရင္းသြင္းရမည္။</string>
+    <string name="idv_face_match_cust_minor_des">Capturing ID document(s), validate that ID and extract data from it. Additionally capture a selfie of the customer and match it against the photo on the ID, then enroll all captured biometrics with the customer if the match is positive.</string>
+    <string name="customer_verification_des">ယခင္စာရင္းသြင္းထားသည့္ customer  နွင့္ တိုက္ဆိုင္စစ္ေဆးရန္ biometric အခ်က္အလက္ကို ရယူရမည္။</string>
+    <string name="idv_video_match_des">စာရြက္စာတမ္း ID ကို ရယူျခင္း၊ ID ကိုအတည္ျပုျခင္းနွင့္ ေန့စြဲရယူျခင္း ထို့အျပင္ ဗီဒီယိုရိုက္ယူ၍ မ်က္နွာအား ID နွင့္ တိုက္ဆိုင္စစ္ေဆးရမည္။</string>
+    <string name="idv_video_match_cust_des">စာရြက္စာတမ္း ID ကို ရယူျခင္း၊ ID ကိုအတည္ျပုျခင္းနွင့္ ေန့စြဲရယူျခင္း ထို့အျပင္ ဗီဒီယိုရိုက္၍ ၎အား ID မွ ပုံနွင့္ တိုက္ဆိုင္စစ္ေဆးျပီး ကိုက္ညီပါက ရယူထားသည့္ biometrics မ်ားနွင့္အတူ customer အား စာရင္းသြင္းရမည္။</string>
+    <string name="idv_video_match_emp_des">စာရြက္စာတမ္း ID ကို ရယူျခင္း၊ ID ကိုအတည္ျပုျခင္းနွင့္ ေန့စြဲရယူျခင္း ထို့အျပင္ ဗီဒီယိုရိုက္ယူ၍ မ်က္နွာအား ID နွင့္ တိုက္ဆိုင္စစ္ေဆးျပီး ကိုက္ညီပါက ရယူထားသည့္ biometrics မ်ားနွင့္အတူ customer အား စာရင္းသြင္းရမည္။</string>
+    <string name="cust_enroll_biometrics_des">Customer ၏ အခ်က္အလက္နွင့္ biometrics ကိုရယူ၍ customer database သို့ စာရင္းသြင္းရမည္။ မည္သည့္ ID စာရြက္စာတမ္းမ်ွ မရယူပါ။</string>
+    <string name="emp_enroll_biometrics_des">ဝန္ထမ္း၏ အခ်က္အလက္နွင့္ biometrics ကိုရယူ၍ ဝန္ထမ္း database သို့ စာရင္းသြင္းရမည္။ မည္သည့္ ID စာရြက္စာတမ္းမ်ွ မရယူပါ။</string>
+    <string name="address_processing_des">လိပ္စာ တိုက္ဆိုင္စစ္ေဆးျခင္း/ အတည္ျပဳျခင္း</string>
+    <string name="employee_verification_des">ယခင္စာရင္းသြင္းထားသည့္ ဝန္ထမ္းနွင့္ တိုက္ဆိုင္စစ္ေဆးရန္ biometric အခ်က္အလက္ကို ရယူရမည္။</string>
+    <string name="face_match_only_emp_des">ID စာရြက္စာတမ္းမ်ား ရယူျပီး ဝန္ထမ္းကို ဆယ္ဖီရိုက္ျပီး  ၎အား ID မွ ပုံနွင့္ တိုက္ဆိုင္စစ္ေဆးပါ။ ကိုက္ညီပါက ဝန္ထမ္းအား စာရင္းသြင္းပါ။</string>
+    <string name="create_customer_override_service_des">Agent Override လုပ္ေဆာင္ခ်က္ကို အသုံးျပဳ၍ customer ဖန္တီးျပီး၊ override ျပဳလုပ္ရန္အတြက္ ဝန္ထမ္း၏ အတည္ျပဳမႈ လိုအပ္ပါသည္။</string>
+    <string name="create_employee_override_service_des">Agent Override လုပ္ေဆာင္ခ်က္ကို အသုံးျပဳ၍ ဝန္ထမ္းစာရင္း ဖန္တီးျပီး၊ override ျပဳလုပ္ရန္အတြက္ ဝန္ထမ္း၏ အတည္ျပဳမႈ လိုအပ္ပါသည္။</string>
+    <string name="id_validation_face_match_primary_id_des">မူလ စာရြက္စာတမ္း ID ကို ရယူျခင္း၊ ID ကိုအတည္ျပုျခင္းနွင့္ ေန့စြဲရယူျခင္း ထို့အျပင္ ဆယ္ဖီရိုက္၍ ၎အား ID မွ ပုံနွင့္ တိုက္ဆိုင္စစ္ေဆးျခင္း</string>
+    <string name="id_validation_face_match_secondary_id_des">မူလ စာရြက္စာတမ္း ID ကို ရယူျခင္း၊ ID ကိုအတည္ျပုျခင္းနွင့္ ေန့စြဲရယူျခင္း ထို့အျပင္ ဆယ္ဖီရိုက္၍ ၎အား ID မွ ပုံနွင့္ တိုက္ဆိုင္စစ္ေဆးျခင္း</string>
+    <string name="otp_generation_des">အတည္ျပဳရန္အတြက္ OTP နံပါတ္ ထုတ္ပါ။</string>
+    <string name="token_generation_des">တိုကင္နံပါတ္ထုတ္ျခင္း</string>
+    <string name="otp_verification_des">ယခင္ထုတ္ယူသည့္ OTP ကို ရယူ၍ အတည္ျပဳပါ။</string>
+    <string name="customer_search_des">မဟုတ်တဲ့ biometric သတင်းအချက်အလက်ကိုအသုံးပြုပြီးဖောက်သည်ရှာရန်</string>
+    <string name="employee_search_des">မဟုတ်တဲ့ biometric ပြန်ကြားရေးသုံးပြီးဝန်ထမ်းရှာရန်</string>
+    <string name="idv_video_conf_match_des">ID ကိုစာရွက်စာတမ်း (s) ကိုဖမ်းယူခြင်း, ကကနေ ID နှင့်ထုတ်ယူ data တွေကိုမှန်ကန်ကြောင်းသက်သေပြ။ ထို့အပြင်စာရင်းစစ်ရည်ရွယ်ချက်များအတွက်မှတျတမျးတငျထားပါလိမ့်မည်တဲ့ကျောရုံးအော်ပရေတာနှင့်အတူဗွီဒီယိုတစ်ခုညီလာခံ session တစ်ခုစတင်ပါ။ ဗီဒီယိုကွန်ဖရထံမှတစ်ဦးကဓာတ်ပုံတစ်ပုံ image ကိုဖြည်နှင့် ID ကိုဆန့်ကျင်မျက်နှာကိုက်ညီစေရန်အသုံးပြုလိမ့်မည်။</string>
+    <string name="video_conf_match_des">စာရင်းစစ်ရည်ရွယ်ချက်များအတွက်မှတျတမျးတငျထားပါလိမ့်မည်တဲ့ကျောရုံးအော်ပရေတာနှင့်အတူဗွီဒီယိုတစ်ခုညီလာခံ session ကို Initiate ။</string>
+    <string name="idv_video_conf_cust_match_des">ဖောက်သည်တစ်ဦးအဘို့အ ID ကိုစာရွက်စာတမ်း (s) ကိုဖမ်းယူခြင်း, ကကနေ ID နှင့်ထုတ်ယူ data တွေကိုမှန်ကန်ကြောင်းသက်သေပြ။ ထို့အပြင်စာရင်းစစ်ရည်ရွယ်ချက်များအတွက်မှတျတမျးတငျထားပါလိမ့်မည်တဲ့ကျောရုံးအော်ပရေတာနှင့်အတူဗွီဒီယိုတစ်ခုညီလာခံ session တစ်ခုစတင်ပါ။ ဗီဒီယိုကွန်ဖရထံမှတစ်ဦးကဓာတ်ပုံတစ်ပုံ image ကိုဖြည်နှင့် ID ကိုဆန့်ကျင်မျက်နှာကိုက်ညီစေရန်အသုံးပြု, ထို့နောက်ဖောက်သည်တွေနဲ့အားလုံးဖမ်းဆီးရမိ biometric စာရင်းသွင်းလိမ့်မည်။</string>
+    <string name="idv_video_conf_emp_match_des">တစ်ဦးဝန်ထမ်းများအတွက် ID ကိုစာရွက်စာတမ်း (s) ကိုဖမ်းယူခြင်း, ကကနေ ID နှင့်ထုတ်ယူ data တွေကိုမှန်ကန်ကြောင်းသက်သေပြ။ ထို့အပြင်စာရင်းစစ်ရည်ရွယ်ချက်များအတွက်မှတျတမျးတငျထားပါလိမ့်မည်တဲ့ကျောရုံးအော်ပရေတာနှင့်အတူဗွီဒီယိုတစ်ခုညီလာခံ session တစ်ခုစတင်ပါ။ ဗီဒီယိုကွန်ဖရထံမှတစ်ဦးကဓာတ်ပုံတစ်ပုံ image ကိုဖြည်နှင့် ID ကိုဆန့်ကျင်မျက်နှာကိုက်ညီစေရန်အသုံးပြု, ထို့နောက်ဝန်ထမ်းနှင့်အတူအားလုံးဖမ်းဆီးရမိ biometric စာရင်းသွင်းလိမ့်မည်။</string>
+    <string name="identify_cus_with_biometrics_des">တစ်ဦးဖောက်သည်များအတွက် biometric data တွေကို Capture (မျက်နှာ, လက်ဗွေ, အသံသို့မဟုတ်မျက်ဝန်း) နှင့်၎င်း၏ပြီးသားစာရင်းသွင်းလျှင်ကြည့်ရှုရန်ဖောက်သည် DB ရှာပါ။</string>
+    <string name="identify_emp_with_biometrics_des">တစ်ထမ်း (မျက်နှာ, လက်ဗွေ, အသံသို့မဟုတ်မျက်ဝန်း) အတွက် biometric data တွေကို Capture နှင့်၎င်း၏ပြီးသားစာရင်းသွင်းလျှင်ကြည့်ရှုရန်ထမ်း DB ရှာပါ။</string>
+    <string name="auto_fill_service_des">id type ကိုရွေးပြီး data offline ကို extract လုပ်ပါ</string>
+    <string name="offline_face_service_des">အော့ဖ်လိုင်းတိုက်ရိုက်မျက်နှာ</string>
+
+    <!-- Id Country-->
+    <string name="AFG">Afghanistan</string>
+    <string name="ALA">Åland Islands</string>
+    <string name="ALB">Albania</string>
+    <string name="DZA">Algeria</string>
+    <string name="ALL">ALL</string>
+    <string name="ASM">American Samoa</string>
+    <string name="AND">Andorra</string>
+    <string name="AGO">Angola</string>
+    <string name="AIA">Anguilla</string>
+    <string name="ATA">Antarctica</string>
+    <string name="ATG">Antigua and Barbuda</string>
+    <string name="ARG">Argentina</string>
+    <string name="ARM">Armenia</string>
+    <string name="ABW">Aruba</string>
+    <string name="AUS">Australia</string>
+    <string name="AUT">Austria</string>
+    <string name="AZE">Azerbaijan</string>
+    <string name="BHS">Bahamas</string>
+    <string name="BHR">Bahrain</string>
+    <string name="BGD">Bangladesh</string>
+    <string name="BRB">Barbados</string>
+    <string name="BLR">Belarus</string>
+    <string name="BEL">Belgium</string>
+    <string name="BLZ">Belize</string>
+    <string name="BEN">Benin</string>
+    <string name="BMU">Bermuda</string>
+    <string name="BTN">Bhutan</string>
+    <string name="BOL">Bolivia, Plurinational State of</string>
+    <string name="BIH">Bosnia and Herzegovina</string>
+    <string name="BWA">Botswana</string>
+    <string name="BVT">Bouvet Island</string>
+    <string name="BRA">Brazil</string>
+    <string name="IOT">British Indian Ocean Territory</string>
+    <string name="BRN">Brunei Darussalam</string>
+    <string name="BGR">Bulgaria</string>
+    <string name="BFA">Burkina Faso FASO</string>
+    <string name="BDI">Burundi</string>
+    <string name="KHM">Cambodia</string>
+    <string name="CMR">Cameroon</string>
+    <string name="CAN">Canada</string>
+    <string name="CPV">Cabo Verde</string>
+    <string name="BES">Bonaire, Sint Eustatius and Saba</string>
+    <string name="CYM">Cayman Islands</string>
+    <string name="CAF">Central African Republic</string>
+    <string name="TCD">Chad</string>
+    <string name="CHL">Chile</string>
+    <string name="CHN">China</string>
+    <string name="CXR">Christmas Island</string>
+    <string name="CCK">Cocos (Keeling) Islands</string>
+    <string name="COL">Colombia</string>
+    <string name="COM">Comoros</string>
+    <string name="COG">Congo</string>
+    <string name="COD">Congo, the Democratic Republic of the</string>
+    <string name="COK">Cook Islands</string>
+    <string name="CRI">Costa Rica</string>
+    <string name="CIV">Côte d\'Ivoire</string>
+    <string name="HRV">Croatia</string>
+    <string name="CUB">Cuba</string>
+    <string name="CUW">Curaçao</string>
+    <string name="CYP">Cyprus</string>
+    <string name="CZE">Czech Republic</string>
+    <string name="DNK">Denmark</string>
+    <string name="DJI">Djibouti</string>
+    <string name="DMA">Dominica</string>
+    <string name="DOM">Dominican Republic</string>
+    <string name="TMP">EAST TIMOR</string>
+    <string name="ECU">Ecuador</string>
+    <string name="EGY">Egypt</string>
+    <string name="SLV">El Salvador</string>
+    <string name="GNQ">Equatorial Guinea</string>
+    <string name="ERI">Eritrea</string>
+    <string name="EST">Estonia</string>
+    <string name="ETH">Ethiopia</string>
+    <string name="FLK">Falkland Islands (Malvinas)</string>
+    <string name="FRO">Faroe Islands</string>
+    <string name="FJI">Fiji</string>
+    <string name="FIN">Finland</string>
+    <string name="FRA">France</string>
+    <string name="FXX">FRANCE METROPOLITAN</string>
+    <string name="GUF">French Guiana</string>
+    <string name="PYF">French Polynesia</string>
+    <string name="ATF">French Southern Territories</string>
+    <string name="GAB">Gabon</string>
+    <string name="GMB">Gambia</string>
+    <string name="GEO">Georgia</string>
+    <string name="DEU">Germany</string>
+    <string name="GHA">Ghana</string>
+    <string name="GIB">Gibraltar</string>
+    <string name="GRC">Greece</string>
+    <string name="GRL">Greenland</string>
+    <string name="GRD">Grenada</string>
+    <string name="GLP">Guadeloupe</string>
+    <string name="GUM">Guam</string>
+    <string name="GTM">Guatemala</string>
+    <string name="GGY">Guernsey</string>
+    <string name="GIN">Guinea</string>
+    <string name="GNB">Guinea-Bissau</string>
+    <string name="GUY">Guyana</string>
+    <string name="HTI">Haiti</string>
+    <string name="HMD">Heard Island and McDonald Islands</string>
+    <string name="VAT">Holy See (Vatican City State)</string>
+    <string name="HND">Honduras</string>
+    <string name="HKG">Hong Kong</string>
+    <string name="HUN">Hungary</string>
+    <string name="ISL">Iceland</string>
+    <string name="IND">India</string>
+    <string name="IDN">Indonesia</string>
+    <string name="IRN">Iran, Islamic Republic of</string>
+    <string name="IRQ">Iraq</string>
+    <string name="IRL">Ireland</string>
+    <string name="IMN">Isle of Man</string>
+    <string name="ISR">Israel</string>
+    <string name="ITA">Italy</string>
+    <string name="JAM">Jamaica</string>
+    <string name="JPN">Japan</string>
+    <string name="JEY">Jersey</string>
+    <string name="JOR">Jordan</string>
+    <string name="KAZ">Kazakhstan</string>
+    <string name="KEN">Kenya</string>
+    <string name="KIR">Kiribati</string>
+    <string name="PRK">Korea, Democratic People\'s Republic of</string>
+    <string name="KOR">Korea, Republic of</string>
+    <string name="RKS">KOSOVO</string>
+    <string name="KWT">Kuwait</string>
+    <string name="KGZ">Kyrgyzstan</string>
+    <string name="LAO">Lao People\'s Democratic Republic</string>
+    <string name="LVA">Latvia</string>
+    <string name="LBN">Lebanon</string>
+    <string name="LSO">Lesotho</string>
+    <string name="LBR">Liberia</string>
+    <string name="LBY">Libya</string>
+    <string name="LIE">Liechtenstein</string>
+    <string name="LTU">Lithuania</string>
+    <string name="LUX">Luxembourg</string>
+    <string name="MAC">Macao</string>
+    <string name="MKD">Macedonia, the former Yugoslav Republic of</string>
+    <string name="MDG">Madagascar</string>
+    <string name="MWI">Malawi</string>
+    <string name="MYS">Malaysia</string>
+    <string name="MDV">Maldives</string>
+    <string name="MLI">Mali</string>
+    <string name="MLT">Malta</string>
+    <string name="MHL">Marshall Islands</string>
+    <string name="MTQ">MARTINIQUE</string>
+    <string name="MRT">Mauritania</string>
+    <string name="MUS">Mauritius</string>
+    <string name="MYT">Mayotte</string>
+    <string name="MEX">Mexico</string>
+    <string name="FSM">Micronesia, Federated States of</string>
+    <string name="MDA">Moldova, Republic of</string>
+    <string name="MCO">Monaco</string>
+    <string name="MNG">Mongolia</string>
+    <string name="MNE">Montenegro</string>
+    <string name="MSR">Montserrat</string>
+    <string name="MAR">Morocco</string>
+    <string name="MOZ">Mozambique</string>
+    <string name="MMR">Myanmar</string>
+    <string name="NAM">Namibia</string>
+    <string name="NRU">Nauru</string>
+    <string name="NPL">Nepal</string>
+    <string name="NLD">Netherlands</string>
+    <string name="ANT">NETHERLANDS ANTILLES</string>
+    <string name="NCL">New Caledonia</string>
+    <string name="NZL">New Zealand</string>
+    <string name="NIC">Nicaragua</string>
+    <string name="NER">Niger</string>
+    <string name="NGA">Nigeria</string>
+    <string name="NIU">Niue</string>
+    <string name="NFK">NORFOLK ISLAND</string>
+    <string name="MNP">NORTHERN MARIANA ISLANDS</string>
+    <string name="NOR">NORWAY</string>
+    <string name="OMN">OMAN</string>
+    <string name="PAK">PAKISTAN</string>
+    <string name="PLW">PALAU</string>
+    <string name="PSE">PALESTINIAN TERRITORY</string>
+    <string name="PAN">PANAMA</string>
+    <string name="PNG">PAPUA NEW GUINEA</string>
+    <string name="PRY">PARAGUAY</string>
+    <string name="PER">PERU</string>
+    <string name="PHL">PHILIPPINES</string>
+    <string name="PCN">PITCAIRN</string>
+    <string name="POL">POLAND</string>
+    <string name="PRT">PORTUGAL</string>
+    <string name="PRI">PUERTO RICO</string>
+    <string name="QAT">QATAR</string>
+    <string name="REU">Réunion</string>
+    <string name="ROU">ROMANIA</string>
+    <string name="RUS">RUSSIAN FEDERATION</string>
+    <string name="RWA">RWANDA</string>
+    <string name="BLM">SAINT BARTHELEMY</string>
+    <string name="KNA">SAINT KITTS AND NEVIS</string>
+    <string name="LCA">SAINT LUCIA</string>
+    <string name="MAF">SAINT MARTIN</string>
+    <string name="VCT">SAINT VINCENT AND THE GRENADINES</string>
+    <string name="WSM">SAMOA</string>
+    <string name="SMR">SAN MARINO</string>
+    <string name="STP">SAO TOME AND PRINCIPE</string>
+    <string name="SAU">SAUDI ARABIA</string>
+    <string name="SEN">SENEGAL</string>
+    <string name="SRB">SERBIA</string>
+    <string name="SYC">SEYCHELLES</string>
+    <string name="SLE">SIERRA LEONE</string>
+    <string name="SGP">SINGAPORE</string>
+    <string name="SXM">SINT MAARTEN</string>
+    <string name="SVK">SLOVAKIA (Slovak Republic)</string>
+    <string name="SVN">SLOVENIA</string>
+    <string name="SLB">SOLOMON ISLANDS</string>
+    <string name="SOM">SOMALIA</string>
+    <string name="ZAF">SOUTH AFRICA</string>
+    <string name="SGS">SOUTH GEORGIA AND SOUTH S.S.</string>
+    <string name="SSD">SOUTH SUDAN</string>
+    <string name="ESP">SPAIN</string>
+    <string name="LKA">SRI LANKA</string>
+    <string name="SHN">ST. HELENA</string>
+    <string name="SPM">ST. PIERRE AND MIQUELON</string>
+    <string name="SDN">SUDAN</string>
+    <string name="SUR">SURINAME</string>
+    <string name="SJM">SVALBARD AND JAN MAYEN ISLANDS</string>
+    <string name="SWZ">SWAZILAND</string>
+    <string name="SWE">SWEDEN</string>
+    <string name="CHE">SWITZERLAND</string>
+    <string name="SYR">SYRIAN ARAB REPUBLIC</string>
+    <string name="TWN">TAIWAN PROVINCE OF CHINA</string>
+    <string name="TJK">TAJIKISTAN</string>
+    <string name="TZA">TANZANIA UNITED REPUBLIC OF</string>
+    <string name="THA">THAILAND</string>
+    <string name="TGO">TOGO</string>
+    <string name="TKL">TOKELAU</string>
+    <string name="TON">TONGA</string>
+    <string name="TTO">TRINIDAD AND TOBAGO</string>
+    <string name="TUN">TUNISIA</string>
+    <string name="TUR">TURKEY</string>
+    <string name="TKM">TURKMENISTAN</string>
+    <string name="TCA">TURKS AND CAICOS ISLANDS</string>
+    <string name="TUV">TUVALU</string>
+    <string name="UMI">U.S. MINOR ISLANDS</string>
+    <string name="UGA">UGANDA</string>
+    <string name="UKR">UKRAINE</string>
+    <string name="ARE">UNITED ARAB EMIRATES</string>
+    <string name="GBR">UNITED KINGDOM</string>
+    <string name="USA">United States of America</string>
+    <string name="URY">URUGUAY</string>
+    <string name="UZB">UZBEKISTAN</string>
+    <string name="VUT">VANUATU</string>
+    <string name="VEN">VENEZUELA</string>
+    <string name="VNM">VIET NAM</string>
+    <string name="VGB">VIRGIN ISLANDS (BRITISH)</string>
+    <string name="VIR">VIRGIN ISLANDS (U.S.)</string>
+    <string name="WLF">WALLIS AND FUTUNA ISLANDS</string>
+    <string name="ESH">WESTERN SAHARA</string>
+    <string name="YEM">YEMEN</string>
+    <string name="ZMB">ZAMBIA</string>
+    <string name="ZWE">ZIMBABWE</string>
+
+    <!-- Id Type-->
+    <string name="PP">PASSPORT</string>
+    <string name="NID">NATIONAL_ID</string>
+    <string name="RID">RESIDENCE_CARD</string>
+    <string name="DL">DRIVERS_LICENSE</string>
+    <string name="PID">PHOTO_ID_CARD</string>
+    <string name="VID">VOTER_ID_CARD</string>
+    <string name="TID">TAX_ID_CARD</string>
+    <string name="WV">WORK_VISA_PERMIT</string>
+    <string name="SV">STUDENT_VISA_PERMIT</string>
+    <string name="GID">MILITARY_POLICE_GOVERNMENT_ID</string>
+    <string name="BID">BOAT_SHIP_ID_CARD</string>
+    <string name="IDM">IDM</string>
+    <string name="UBL">UTILITY_BILL</string>
+    <string name="OTH">OTHERS</string>
+
+    <string name="face">မျက်နှာ</string>
+    <string name="processed_face">လုပ်ငန်းများ၌မျက်နှာ</string>
+    <string name="oval_face">ဘဲဥပုံမျက်နှာ</string>
+
+    //QRCode Account SetUp scan_qr_code_des
+    <string name="qr_code_inst">သင့်ရဲ့အကောင့်ကိုအသေးစိတ် populate ငါ့အဆင့်ဆင့်ပြောင်းလဲဖြစ်ပေါ်လာ Downloads Screen ကနေဖို့အတွက် QR Code ကို scan လုပ်ပါ။</string>
+    <string name="qr_button_title">အကောင့်အသေးစိတ်ဖြည့်ရန်ဖို့အတွက် QR Code ကို scan</string>
+
+    <!--Custom UI Configuration-->
+    <string name="customize_ui_configuration">ထုံးစံ UI ကိုကို Configuration</string>
+    <string name="select_configuration">Configuration ကို Select လုပ်ပါ</string>
+    <string name="id_front_capture">id တပ်ဦးကိုဖမ်းယူ</string>
+    <string name="id_back_capture">id သို့ပြန်သွားရန် Capture အ</string>
+    <string name="snippet_capture">အတိုအထွာ Capture အ</string>
+    <string name="selfie_capture">selfie Capture အ</string>
+    <string name="label_value">တံဆိပ် Value ကို</string>
+
+    //VideoConference
+    <string name="conference_completed">ညီလာခံပြီးစီး</string>
+    <string name="conference_incompleted">ညီလာခံမပြည့်စုံသည်။ re-join ဖို့နောက်တဖန် click နှိပ်ပေးပါ</string>
+
+    <!--Signature-->
+    <string name="trans_signature_bg">Transparent Background</string>
+</resources>
+

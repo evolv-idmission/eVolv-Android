@@ -1,0 +1,1134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/bottomSheetCaptureFingerPrint"
+    android:layout_width="match_parent"
+    android:layout_height="300dp"
+    android:background="@color/background"
+    android:orientation="vertical"
+    app:behavior_hideable="false"
+    app:behavior_peekHeight="47dp"
+    app:layout_behavior="@string/bottom_sheet_behavior">
+
+    <LinearLayout
+        android:id="@+id/linear_layout_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_green_style"
+        android:orientation="horizontal"
+        android:padding="15dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".5"
+                android:gravity="right">
+
+                <ImageView
+                    android:id="@+id/image_view"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="center"
+                    android:paddingLeft="2dp"
+                    android:paddingTop="5dp"
+                    android:paddingRight="10dp"
+                    android:paddingBottom="5dp"
+                    android:src="@drawable/expand_arrow" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/bottomSheetHeading"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".8"
+                android:gravity="left"
+                android:text="@string/configuration"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="20dp"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/text_view_focus_threshold"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="@string/focus_threshold"
+                    android:textColor="@color/gray_dark"
+                    android:textSize="@dimen/config_edit_text_size" />
+
+                <EditText
+                    android:id="@+id/edit_view_focus_threshold"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bottom_sheet_edit_box_style"
+                    android:imeOptions="actionNext"
+                    android:inputType="number"
+                    android:textSize="@dimen/config_edit_text_size" />
+
+                <TextView
+                    android:id="@+id/text_view_glare_threshold"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:text="@string/glare_threshold"
+                    android:textColor="@color/gray_dark"
+                    android:textSize="@dimen/config_edit_text_size" />
+
+                <EditText
+                    android:id="@+id/edit_view_glare_threshold"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bottom_sheet_edit_box_style"
+                    android:imeOptions="actionNext"
+                    android:inputType="number"
+                    android:textSize="@dimen/config_edit_text_size" />
+
+                <TextView
+                    android:id="@+id/text_view_finger_check_focus"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:text="@string/no_of_finger_to_check_focus"
+                    android:textColor="@color/gray_dark"
+                    android:textSize="@dimen/config_edit_text_size" />
+
+                <EditText
+                    android:id="@+id/edit_view_finger_check_focus"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bottom_sheet_edit_box_style"
+                    android:imeOptions="actionDone"
+                    android:inputType="number"
+                    android:textSize="@dimen/config_edit_text_size" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/new_4f_configuration"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:orientation="vertical"
+                        android:padding="5dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/index_finger_min"
+                            android:textColor="@color/gray_dark"
+                            android:textSize="@dimen/config_edit_text_size" />
+
+                        <EditText
+                            android:id="@+id/index_finger_threshold_4f_min"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/bottom_sheet_edit_box_style"
+                            android:imeOptions="actionNext"
+                            android:inputType="number"
+                            android:textSize="@dimen/config_edit_text_size" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:orientation="vertical"
+                        android:padding="5dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/index_finger_max"
+                            android:textColor="@color/gray_dark"
+                            android:textSize="@dimen/config_edit_text_size" />
+
+                        <EditText
+                            android:id="@+id/index_finger_threshold_4f"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/bottom_sheet_edit_box_style"
+                            android:imeOptions="actionNext"
+                            android:inputType="number"
+                            android:textSize="@dimen/config_edit_text_size" />
+                    </LinearLayout>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:orientation="vertical"
+                        android:padding="5dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/middle_finger_Min"
+                            android:textSize="@dimen/config_edit_text_size" />
+
+                        <EditText
+                            android:id="@+id/middle_finger_threshold_4f_min"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/bottom_sheet_edit_box_style"
+                            android:imeOptions="actionNext"
+                            android:inputType="number"
+                            android:textSize="@dimen/config_edit_text_size" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:orientation="vertical"
+                        android:padding="5dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/middle_finger_Max"
+                            android:textSize="@dimen/config_edit_text_size" />
+
+                        <EditText
+                            android:id="@+id/middle_finger_threshold_4f"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/bottom_sheet_edit_box_style"
+                            android:imeOptions="actionNext"
+                            android:inputType="number"
+                            android:textSize="@dimen/config_edit_text_size" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:orientation="vertical"
+                        android:padding="5dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/ring_finger_min"
+                            android:textColor="@color/gray_dark"
+                            android:textSize="@dimen/config_edit_text_size" />
+
+                        <EditText
+                            android:id="@+id/ring_finger_threshold_4f_min"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/bottom_sheet_edit_box_style"
+                            android:imeOptions="actionNext"
+                            android:inputType="number"
+                            android:textSize="@dimen/config_edit_text_size" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:orientation="vertical"
+                        android:padding="5dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/ring_finger_max"
+                            android:textColor="@color/gray_dark"
+                            android:textSize="@dimen/config_edit_text_size" />
+
+                        <EditText
+                            android:id="@+id/ring_finger_threshold_4f"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/bottom_sheet_edit_box_style"
+                            android:imeOptions="actionNext"
+                            android:inputType="number"
+                            android:textSize="@dimen/config_edit_text_size" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:orientation="vertical"
+                        android:padding="5dp">
+
+                        <TextView
+                            android:layout_width="135dp"
+                            android:layout_height="wrap_content"
+                            android:text="@string/baby_finger_min"
+                            android:textSize="@dimen/config_edit_text_size" />
+
+                        <EditText
+                            android:id="@+id/baby_finger_threshold_4f_min"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/bottom_sheet_edit_box_style"
+                            android:imeOptions="actionNext"
+                            android:inputType="number"
+                            android:textSize="@dimen/config_edit_text_size" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:orientation="vertical"
+                        android:padding="5dp">
+
+                        <TextView
+                            android:layout_width="136dp"
+                            android:layout_height="wrap_content"
+                            android:text="@string/baby_finger_max"
+                            android:textSize="@dimen/config_edit_text_size" />
+
+                        <EditText
+                            android:id="@+id/baby_finger_threshold_4f"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/bottom_sheet_edit_box_style"
+                            android:imeOptions="actionNext"
+                            android:inputType="number"
+                            android:textSize="@dimen/config_edit_text_size" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/save_image_height"
+                            android:textColor="@color/gray_dark"
+                            android:textSize="@dimen/config_edit_text_size" />
+
+                        <EditText
+                            android:id="@+id/save_image_width_4f"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/bottom_sheet_edit_box_style"
+                            android:imeOptions="actionNext"
+                            android:inputType="number"
+                            android:textSize="@dimen/config_edit_text_size" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/zoom"
+                            android:textColor="@color/gray_dark"
+                            android:textSize="@dimen/config_edit_text_size" />
+
+                        <EditText
+                            android:id="@+id/zoom_camera_4f"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/bottom_sheet_edit_box_style"
+                            android:imeOptions="actionNext"
+                            android:inputType="number"
+                            android:maxLength="3"
+                            android:textSize="@dimen/config_edit_text_size" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/far_percentage"
+                            android:textSize="@dimen/config_edit_text_size" />
+
+                        <EditText
+                            android:id="@+id/far_percentage"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/bottom_sheet_edit_box_style"
+                            android:imeOptions="actionNext"
+                            android:inputType="numberDecimal"
+                            android:textSize="@dimen/config_edit_text_size" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/too_far_percentage"
+                            android:textColor="@color/gray_dark"
+                            android:textSize="@dimen/config_edit_text_size" />
+
+                        <EditText
+                            android:id="@+id/too_far_percentage"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/bottom_sheet_edit_box_style"
+                            android:imeOptions="actionNext"
+                            android:inputType="number"
+                            android:maxLength="3"
+                            android:textSize="@dimen/config_edit_text_size" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:visibility="invisible">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/aggresiveness_factor"
+                            android:textSize="@dimen/config_edit_text_size" />
+
+                        <EditText
+                            android:id="@+id/aggresiveness_factor_4f"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/bottom_sheet_edit_box_style"
+                            android:imeOptions="actionNext"
+                            android:inputType="numberDecimal"
+                            android:textSize="@dimen/config_edit_text_size" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:visibility="invisible">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/ridge_width"
+                            android:textColor="@color/gray_dark"
+                            android:textSize="@dimen/config_edit_text_size" />
+
+                        <EditText
+                            android:id="@+id/ridge_width_4f"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/bottom_sheet_edit_box_style"
+                            android:imeOptions="actionNext"
+                            android:inputType="number"
+                            android:maxLength="3"
+                            android:textSize="@dimen/config_edit_text_size" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/finger_length_percentage"
+                            android:textColor="@color/gray_dark"
+                            android:textSize="@dimen/config_edit_text_size" />
+
+                        <EditText
+                            android:id="@+id/finger_length_perc_4f"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/bottom_sheet_edit_box_style"
+                            android:imeOptions="actionNext"
+                            android:inputType="number"
+                            android:maxLength="3"
+                            android:textSize="@dimen/config_edit_text_size" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/sharp_threshold"
+                            android:textColor="@color/gray_dark"
+                            android:textSize="@dimen/config_edit_text_size" />
+
+                        <EditText
+                            android:id="@+id/sharp_threshold_4f"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/bottom_sheet_edit_box_style"
+                            android:imeOptions="actionNext"
+                            android:inputType="number"
+                            android:maxLength="3"
+                            android:textSize="@dimen/config_edit_text_size" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/counter_for_finger_width_average"
+                            android:textColor="@color/gray_dark"
+                            android:textSize="@dimen/config_edit_text_size" />
+
+                        <EditText
+                            android:id="@+id/counter_finger_width_average"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/bottom_sheet_edit_box_style"
+                            android:imeOptions="actionNext"
+                            android:inputType="number"
+                            android:maxLength="3"
+                            android:textSize="@dimen/config_edit_text_size" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:visibility="invisible">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/gray_dark"
+                            android:textSize="@dimen/config_edit_text_size" />
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/bottom_sheet_edit_box_style"
+                            android:imeOptions="actionNext"
+                            android:inputType="number"
+                            android:maxLength="3"
+                            android:textSize="@dimen/config_edit_text_size" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/show_instruction_screen"
+                            android:textSize="@dimen/config_edit_text_size" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="5dp"
+                                android:text="@string/no"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/config_toggle_button_size" />
+
+                            <androidx.appcompat.widget.SwitchCompat
+                                android:id="@+id/show_instruction_fp_detect"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:checked="true"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:theme="@style/SwitchStyle" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp"
+                                android:text="@string/yes"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/config_toggle_button_size" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/detect_hand_type"
+                            android:textColor="@color/gray_dark"
+                            android:textSize="@dimen/config_edit_text_size" />
+
+                        <RadioGroup
+                            android:id="@+id/radio_group_handtype"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/radio_button_lefthand"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="5dp"
+                                android:text="@string/left"
+                                android:textSize="@dimen/config_toggle_button_size" />
+
+                            <RadioButton
+                                android:id="@+id/radio_button_righthand"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="5dp"
+                                android:text="@string/right"
+                                android:textSize="@dimen/config_toggle_button_size" />
+                        </RadioGroup>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/text_font_type"
+                            android:textColor="@color/gray_dark"
+                            android:textSize="@dimen/config_edit_text_size" />
+
+                        <Spinner
+                            android:id="@+id/text_font_type_spinner"
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp"
+                            android:background="@drawable/spinner_style" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/text_font_style"
+                            android:textSize="@dimen/config_edit_text_size" />
+
+                        <Spinner
+                            android:id="@+id/text_font_style_spinner"
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp"
+                            android:background="@drawable/spinner_style" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/text_label_color"
+                            android:textColor="@color/gray_dark"
+                            android:textSize="@dimen/config_edit_text_size" />
+
+                        <EditText
+                            android:id="@+id/text_label_color"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/bottom_sheet_edit_box_style"
+                            android:imeOptions="actionNext"
+                            android:inputType="text"
+                            android:textSize="@dimen/config_edit_text_size" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/transparency"
+                            android:textSize="@dimen/config_edit_text_size" />
+
+                        <EditText
+                            android:id="@+id/transparency_text_label_color"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/bottom_sheet_edit_box_style"
+                            android:imeOptions="actionNext"
+                            android:inputType="number"
+                            android:textSize="@dimen/config_edit_text_size" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/instruction_button_color"
+                            android:textColor="@color/gray_dark"
+                            android:textSize="@dimen/config_edit_text_size" />
+
+                        <EditText
+                            android:id="@+id/instruction_continue_button_color"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/bottom_sheet_edit_box_style"
+                            android:imeOptions="actionNext"
+                            android:textSize="@dimen/config_edit_text_size" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/transparency"
+                            android:textSize="@dimen/config_edit_text_size" />
+
+                        <EditText
+                            android:id="@+id/transparency_instruction_continue_button"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/bottom_sheet_edit_box_style"
+                            android:imeOptions="actionNext"
+                            android:inputType="number"
+                            android:textSize="@dimen/config_edit_text_size" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/instruction_button_text_color"
+                            android:textColor="@color/gray_dark"
+                            android:textSize="@dimen/config_edit_text_size" />
+
+                        <EditText
+                            android:id="@+id/instruction_continue_button_text_color"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/bottom_sheet_edit_box_style"
+                            android:imeOptions="actionNext"
+                            android:textSize="@dimen/config_edit_text_size" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/transparency"
+                            android:textSize="@dimen/config_edit_text_size" />
+
+                        <EditText
+                            android:id="@+id/transparency_instruction_continue_button_text"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/bottom_sheet_edit_box_style"
+                            android:imeOptions="actionNext"
+                            android:inputType="number"
+                            android:textSize="@dimen/config_edit_text_size" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <CheckBox
+                        android:id="@+id/process_captured_frame"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:checked="true"
+                        android:text="Process captured image from camera" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Intial Frame Height"
+                        android:textSize="@dimen/config_edit_text_size" />
+
+                    <EditText
+                        android:id="@+id/initial_frame_height"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bottom_sheet_edit_box_style"
+                        android:imeOptions="actionNext"
+                        android:inputType="number"
+                        android:text="0"
+                        android:textSize="@dimen/config_edit_text_size" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <CheckBox
+                        android:id="@+id/mask_unwanted_part"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:checked="false"
+                        android:text="Mask unwanted area before processing" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:orientation="vertical"
+                        android:padding="5dp">
+
+                        <TextView
+                            android:layout_width="135dp"
+                            android:layout_height="wrap_content"
+                            android:text="@string/capture_finger"
+                            android:textSize="@dimen/config_edit_text_size" />
+
+                        <CheckBox
+                            android:id="@+id/process_indexfinger_cb"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:checked="true"
+                            android:text="@string/index_finger" />
+
+                        <CheckBox
+                            android:id="@+id/process_middlefinger_cb"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:checked="true"
+                            android:text="@string/middle_finger" />
+
+                        <CheckBox
+                            android:id="@+id/process_ringfinger_cb"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:checked="true"
+                            android:text="@string/ring_finger" />
+
+                        <CheckBox
+                            android:id="@+id/process_babyfinger_cb"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:checked="true"
+                            android:text="@string/baby_finger" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:orientation="vertical"
+                        android:padding="5dp">
+
+                        <TextView
+                            android:layout_width="136dp"
+                            android:layout_height="wrap_content"
+                            android:text="@string/keep_finger"
+                            android:textSize="@dimen/config_edit_text_size" />
+
+                        <CheckBox
+                            android:id="@+id/process_only_indexfinger_cb"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:checked="true"
+                            android:text="@string/index_finger" />
+
+                        <CheckBox
+                            android:id="@+id/process_only_middlefinger_cb"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:checked="true"
+                            android:text="@string/middle_finger" />
+
+                        <CheckBox
+                            android:id="@+id/process_only_ringfinger_cb"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:checked="true"
+                            android:text="@string/ring_finger" />
+
+                        <CheckBox
+                            android:id="@+id/process_only_babyfinger_cb"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:checked="true"
+                            android:text="@string/baby_finger" />
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/button_save"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_style"
+                    android:text="@string/save"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white" />
+
+                <Button
+                    android:id="@+id/button_reset"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_style"
+                    android:text="@string/reset"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

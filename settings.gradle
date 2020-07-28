@@ -1,0 +1,1 @@
+include ':app', ':idm-imgproc-lib', ':opencv', ':card.io', ':Core', ':webrtcpeer-android', ':libjinglewrapper'

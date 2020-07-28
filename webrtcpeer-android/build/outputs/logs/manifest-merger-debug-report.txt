@@ -1,0 +1,41 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/monuv/Documents/Projects/AndroidApps/Android/Github_Project/eVolv_android/webrtcpeer-android/src/main/AndroidManifest.xml:3:1-9:12
+INJECTED from /Users/monuv/Documents/Projects/AndroidApps/Android/Github_Project/eVolv_android/webrtcpeer-android/src/main/AndroidManifest.xml:3:1-9:12
+INJECTED from /Users/monuv/Documents/Projects/AndroidApps/Android/Github_Project/eVolv_android/webrtcpeer-android/src/main/AndroidManifest.xml:3:1-9:12
+INJECTED from /Users/monuv/Documents/Projects/AndroidApps/Android/Github_Project/eVolv_android/webrtcpeer-android/src/main/AndroidManifest.xml:3:1-9:12
+INJECTED from /Users/monuv/Documents/Projects/AndroidApps/Android/Github_Project/eVolv_android/webrtcpeer-android/src/main/AndroidManifest.xml:3:1-9:12
+INJECTED from /Users/monuv/Documents/Projects/AndroidApps/Android/Github_Project/eVolv_android/webrtcpeer-android/src/main/AndroidManifest.xml:3:1-9:12
+INJECTED from /Users/monuv/Documents/Projects/AndroidApps/Android/Github_Project/eVolv_android/webrtcpeer-android/src/main/AndroidManifest.xml:3:1-9:12
+	package
+		ADDED from /Users/monuv/Documents/Projects/AndroidApps/Android/Github_Project/eVolv_android/webrtcpeer-android/src/main/AndroidManifest.xml:4:11-55
+		INJECTED from /Users/monuv/Documents/Projects/AndroidApps/Android/Github_Project/eVolv_android/webrtcpeer-android/src/main/AndroidManifest.xml
+		INJECTED from /Users/monuv/Documents/Projects/AndroidApps/Android/Github_Project/eVolv_android/webrtcpeer-android/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /Users/monuv/Documents/Projects/AndroidApps/Android/Github_Project/eVolv_android/webrtcpeer-android/src/main/AndroidManifest.xml
+		ADDED from /Users/monuv/Documents/Projects/AndroidApps/Android/Github_Project/eVolv_android/webrtcpeer-android/src/main/AndroidManifest.xml:3:1-9:12
+		INJECTED from /Users/monuv/Documents/Projects/AndroidApps/Android/Github_Project/eVolv_android/webrtcpeer-android/src/main/AndroidManifest.xml
+	xmlns:tools
+		ADDED from /Users/monuv/Documents/Projects/AndroidApps/Android/Github_Project/eVolv_android/webrtcpeer-android/src/main/AndroidManifest.xml:5:5-51
+	android:versionCode
+		INJECTED from /Users/monuv/Documents/Projects/AndroidApps/Android/Github_Project/eVolv_android/webrtcpeer-android/src/main/AndroidManifest.xml
+		ADDED from /Users/monuv/Documents/Projects/AndroidApps/Android/Github_Project/eVolv_android/webrtcpeer-android/src/main/AndroidManifest.xml:3:1-9:12
+		INJECTED from /Users/monuv/Documents/Projects/AndroidApps/Android/Github_Project/eVolv_android/webrtcpeer-android/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/monuv/Documents/Projects/AndroidApps/Android/Github_Project/eVolv_android/webrtcpeer-android/src/main/AndroidManifest.xml:3:11-69
+uses-sdk
+ADDED from /Users/monuv/Documents/Projects/AndroidApps/Android/Github_Project/eVolv_android/webrtcpeer-android/src/main/AndroidManifest.xml:6:5-78
+INJECTED from /Users/monuv/Documents/Projects/AndroidApps/Android/Github_Project/eVolv_android/webrtcpeer-android/src/main/AndroidManifest.xml:6:5-78
+INJECTED from /Users/monuv/Documents/Projects/AndroidApps/Android/Github_Project/eVolv_android/webrtcpeer-android/src/main/AndroidManifest.xml:6:5-78
+INJECTED from /Users/monuv/Documents/Projects/AndroidApps/Android/Github_Project/eVolv_android/webrtcpeer-android/src/main/AndroidManifest.xml:6:5-78
+INJECTED from /Users/monuv/Documents/Projects/AndroidApps/Android/Github_Project/eVolv_android/webrtcpeer-android/src/main/AndroidManifest.xml:6:5-78
+	tools:overrideLibrary
+		ADDED from /Users/monuv/Documents/Projects/AndroidApps/Android/Github_Project/eVolv_android/webrtcpeer-android/src/main/AndroidManifest.xml:6:15-76
+	android:targetSdkVersion
+		INJECTED from /Users/monuv/Documents/Projects/AndroidApps/Android/Github_Project/eVolv_android/webrtcpeer-android/src/main/AndroidManifest.xml
+		ADDED from /Users/monuv/Documents/Projects/AndroidApps/Android/Github_Project/eVolv_android/webrtcpeer-android/src/main/AndroidManifest.xml:6:5-78
+		INJECTED from /Users/monuv/Documents/Projects/AndroidApps/Android/Github_Project/eVolv_android/webrtcpeer-android/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/monuv/Documents/Projects/AndroidApps/Android/Github_Project/eVolv_android/webrtcpeer-android/src/main/AndroidManifest.xml
+		ADDED from /Users/monuv/Documents/Projects/AndroidApps/Android/Github_Project/eVolv_android/webrtcpeer-android/src/main/AndroidManifest.xml:6:5-78
+		INJECTED from /Users/monuv/Documents/Projects/AndroidApps/Android/Github_Project/eVolv_android/webrtcpeer-android/src/main/AndroidManifest.xml

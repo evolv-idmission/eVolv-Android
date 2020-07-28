@@ -1,0 +1,101 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 28
+    buildToolsVersion '28.0.3'
+
+    dexOptions {
+//        incremental true
+        javaMaxHeapSize "4g"
+    }
+
+    defaultConfig {
+        applicationId "com.idmission.libtestproject"
+        minSdkVersion 19
+        targetSdkVersion 28
+        versionCode 20200722
+        versionName "7.3.1.2"
+        multiDexEnabled true
+        ndk {
+            // Don't package arm64-v8a or x86_64 , 'x86'
+            abiFilters 'armeabi-v7a', 'arm64-v8a'
+        }
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    dexOptions {
+        javaMaxHeapSize "4g"
+    }
+    /*packagingOptions {
+        exclude 'lib/arm64-v8a/libcardioDecider.so'
+        exclude 'lib/arm64-v8a/libcardioRecognizer_tegra2.so'
+        exclude 'lib/arm64-v8a/libcardioRecognizer.so'
+        exclude 'lib/arm64-v8a/libopencv_core.so'
+        exclude 'lib/arm64-v8a/libopencv_imgproc.so'
+        exclude 'lib/arm64-v8a/libopencv_java3.so'
+        exclude 'lib/arm64-v8a/libibscanultimate.so'
+        exclude 'lib/arm64-v8a/libibscanultimatejni.so'
+        exclude 'lib/arm64-v8a/libusb.so'
+
+        exclude 'lib/mips/libcardioDecider.so'
+
+        exclude 'lib/x86/libcardioDecider.so'
+        exclude 'lib/x86/libcardioRecognizer_tegra2.so'
+        exclude 'lib/x86/libcardioRecognizer.so'
+        exclude 'lib/x86/libopencv_core.so'
+        exclude 'lib/x86/libopencv_imgproc.so'
+
+        exclude 'lib/x86_64/libcardioDecider.so'
+        exclude 'lib/x86_64/libcardioRecognizer_tegra2.so'
+        exclude 'lib/x86_64/libcardioRecognizer.so'
+        exclude 'lib/x86_64/libopencv_core.so'
+        exclude 'lib/x86_64/libopencv_imgproc.so'
+    }*/
+
+    lintOptions {
+//        checkReleaseBuilds false
+        // Or, if you prefer, you can continue to check for errors in release builds,
+        // but continue the build even when errors are found:
+        abortOnError false
+    }
+
+    aaptOptions {
+        noCompress "tflite"
+    }
+    compileOptions {
+        sourceCompatibility = '1.8'
+        targetCompatibility = '1.8'
+    }
+}
+
+dependencies {
+    //compile fileTree(include: ['*.jar'], dir: 'libs')
+    api fileTree(include: ['*.jar'], dir: 'libs')
+    testImplementation 'junit:junit:4.12'
+    implementation 'ch.acra:acra:4.8.5'
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'com.google.android.material:material:1.2.0-alpha03'
+    implementation 'com.google.android.gms:play-services-location:17.0.0'
+    implementation 'com.google.firebase:firebase-ml-vision:24.0.1'
+    implementation 'com.google.firebase:firebase-ml-vision-face-model:19.0.0'
+    implementation 'com.google.firebase:firebase-core:17.2.3'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.0-beta4'
+    implementation project(':idm-imgproc-lib')
+    implementation project(':opencv')
+    implementation project(':card.io')
+    implementation 'com.neovisionaries:nv-websocket-client:1.30'
+    implementation project(':webrtcpeer-android')
+    implementation 'io.fotoapparat:fotoapparat:2.6.1'
+   // implementation files('libs/commons-lang3-3.3.2.jar')
+
+    //Passive face detection
+    implementation 'org.tensorflow:tensorflow-lite:0.0.0-nightly'
+  //  implementation 'com.google.firebase:firebase-storage:19.1.0'
+}
+apply plugin: 'com.google.gms.google-services'

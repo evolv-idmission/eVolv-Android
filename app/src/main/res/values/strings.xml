@@ -1,0 +1,841 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">eVolv App</string>
+    <string name="evolve_test_application">eVolv Test Application</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="account_setting">Account Setting</string>
+
+    <string name="sdk_version">SDK Version</string>
+
+    <!-- Navigation drawer list -->
+    <string name="account_setup">Account Setup</string>
+    <string name="process_flow">Process Flow</string>
+    <string name="about_us">About us</string>
+
+    <!-- Error Messages -->
+    <string name="save_account_detail_error">Save account details first</string>
+    <string name="please_enter_url">Save account details first</string>
+    <string name="id_capture_save_msg">Save configuration</string>
+
+    <!-- Default Values -->
+    <string name="url">https://evolv.idmission.com/IDS/service/integ/idm/thirdparty/upsert</string>
+<!--    <string name="url">https://demo.idmission.com/IDS/service/integ/idm/thirdparty/upsert</string>-->
+    <string name="product_name">Identity_Validation_and_Face_Matching</string>
+
+    <!--Fields-->
+    <string name="re_capture">Recapture</string>
+    <string name="id_validation">ID Validation</string>
+    <string name="face_match">Face Match</string>
+    <string name="id_validation_face_match">Process Image and Face Match</string>
+    <string name="id_validation_video_match">Process Image and Video Match</string>
+    <string name="id_details">ID Details</string>
+    <!--<string name="capture_front">Capture</string>-->
+    <!--<string name="capture_back">Capture</string>-->
+    <!--<string name="face_capture">Capture</string>-->
+    <!--<string name="signature_capture">Capture</string>-->
+    <!--<string name="document_capture">Capture</string>-->
+    <!--<string name="voice_capture">Capture</string>-->
+    <!--<string name="fingerprint_capture">Capture</string>-->
+    <!--<string name="fingerprint_capture_4f">Capture</string>-->
+    <!--<string name="location_capture">Capture</string>-->
+    <!--<string name="video_capture">Capture</string>-->
+    <!--<string name="snippet_capture">Capture</string>-->
+    <string name="result">Result</string>
+    <string name="process_image">Process Image Only</string>
+    <string name="match_face">Match Face Only</string>
+    <string name="process_image_and_match_face">Process Image and Match Face</string>
+    <string name="generate_otp">Generate OTP</string>
+    <string name="verify_otp">Verify OTP</string>
+    <string name="customer_update">Customer Update</string>
+    <string name="customer_Verification">Customer Verification</string>
+    <string name="address_matching">Address Matching</string>
+    <string name="address_capture">POA Capture</string>
+    <string name="show_result_raw_data">Show All Raw Data</string>
+    <string name="raw_data_request">Raw Data from Request</string>
+    <string name="raw_data_response">Raw Data from Response</string>
+    <string name="clear_data_back_main_page">Clear All Data and Back to Main Page</string>
+    <string name="emp_verification">Employee Verification</string>
+    <string name="emp_enrollment">Employee Enrollment(Face Match)</string>
+    <string name="back">Back</string>
+    <string name="generate_token">Generate Token</string>
+    <string name="download">Download</string>
+    <string name="create_emp_override">Create Employee(Override)</string>
+    <string name="create_customer_override">Create Customer(Override)</string>
+    <string name="verify_emp_override">Verify Employee(Override)</string>
+    <string name="verify_customer_override">Verify Customer(Override)</string>
+    <string name="id_validation_with_cus_enroll">ID Validation with customer enrollment</string>
+    <string name="id_validation_with_emp_enroll">ID Validation with employee enrollment</string>
+    <string name="id_face_with_emp_enroll">ID and Face with employee enrollment</string>
+    <string name="id_face_with_video_enroll">ID and Face with video recording</string>
+    <string name="customer_fp_enrollment_title">Customer enrollment with FP Biometrics</string>
+    <string name="customer_fp_enrollment">Fingerprint Enrollment(Customer)</string>
+    <string name="employee_fp_enrollment_title">Employee enrollment with FP Biometrics</string>
+    <string name="employee_fp_enrollment">Fingerprint Enrollment(Employee)</string>
+    <string name="employee_update">Employee Update</string>
+    <string name="customize_product">Customize Product</string>
+    <string name="capture">Capture</string>
+    <string name="initiate">initiate</string>
+    <string name="capture_embossed">Capture Embossed</string>
+
+    <!-- Account Setup-->
+    <string name="test_url">Test URL</string>
+    <string name="login_id">Login ID</string>
+    <string name="password">Password</string>
+    <string name="merchant_id">Merchant ID</string>
+    <string name="product_id">Product ID</string>
+    <string name="product">Product Name</string>
+    <string name="language">Language</string>
+    <string name="save_account">Save Account</string>
+    <string name="edit_account">Edit Account</string>
+    <string name="debaug_mode">Debug Mode</string>
+    <string name="off">Off</string>
+    <string name="on"> On</string>
+    <string name="initialize">INITIALIZE</string>
+    <string name="enter_url">Enter URL</string>
+    <string name="enter_login_id">Enter Login Id</string>
+    <string name="enter_password">Enter Password</string>
+    <string name="enter_merchant_id">Enter Merchant ID</string>
+    <string name="enter_product_id">Enter Product ID</string>
+    <string name="enter_product_name">Entdr Product Name</string>
+    <string name="camera_permission">Need to enable CAMERA permission.</string>
+
+    <!-- Card Capture-->
+    <string name="captute">Capture</string>
+    <string name="back_capture">&lt;  Back</string>
+    <string name="next_capture">Next  &gt;</string>
+    <string name="card_details">Card Details:</string>
+
+    <!-- ID Capture-->
+    <string name="configuration">CONFIGURATION</string>
+    <string name="id_outline_color">Id Outline Color</string>
+    <string name="transparency">Transparency(1-100)</string>
+    <string name="detected_id_outline_color">Detected Id Outline Color</string>
+    <string name="color_outside_outline">Color Outside Outline</string>
+    <string name="detected_color_outside_outline">Detected Color Outside Outline</string>
+    <string name="light_threshold">Light Threshold</string>
+    <string name="min_focus_threshold">Min.Focus Threshold</string>
+    <string name="max_focus_threshold">Max.Focus Threshold</string>
+    <string name="glare_percentage">Glare Percentage</string>
+    <string name="enable_capture_button_time">Enable Capture Button Time(Second)</string>
+    <string name="max_image_size">Max Image Size(kb)</string>
+    <string name="image_height">Image Height</string>
+    <string name="image_width">Image Width</string>
+    <string name="header_text_label_size">Header Text Label Size</string>
+    <string name="text_label_size">Text Label Size</string>
+    <string name="text_font_type">Text Font Type</string>
+    <string name="text_font_style">Text Font Style</string>
+    <string name="header_text_font_type">Header Text Font Type</string>
+    <string name="header_text_font_style">Header Text Font Style</string>
+    <string name="text_label_color">Text Label Color</string>
+    <string name="header_text_label_color">Header Text Label Color</string>
+    <string name="back_button_color">Back Button Color</string>
+    <string name="retry_button_color">Retry Button Color</string>
+    <string name="retry_button_border_color">Retry Button Border Color</string>
+    <string name="confirm_button_color">Confirm Button Color</string>
+    <string name="confirm_button_style">Confirm Button Style</string>
+    <string name="instruction_button_color">Instruction Button Color</string>
+    <string name="instruction_button_text_color">Instruction Button Text Color</string>
+    <string name="instruction_preview_background_color">Instruction Preview Background Color</string>
+    <string name="id_capture_border">ID Capture Border</string>
+    <string name="show_capture_label">Show Capture Label</string>
+    <string name="no">No</string>
+    <string name="yes">Yes</string>
+    <string name="enter_capture_label">Enter Capture Label</string>
+    <string name="default_orientation">Default Orientation</string>
+    <string name="portrait">Portrait</string>
+    <string name="landscape">Landscape</string>
+    <string name="show_instruction_screen">Show Instruction Screen</string>
+    <string name="detect_hand_type">Hand type</string>
+    <string name="show_title_image">Show title Image</string>
+    <string name="id_capture_title_alignment">Id capture title alignment</string>
+    <string name="hide_id_capture_title">Hide Id capture title</string>
+    <string name="id_capture_hint_message_alignment">Id capture hint message alignment</string>
+    <string name="hide_id_hint_message">Hide Id hint message</string>
+    <string name="id_capture_title_image_alignment">Id capture title image alignment</string>
+    <string name="hide_id_title_image">Hide Id title image</string>
+    <string name="id_capture_label">Id capture label</string>
+    <string name="english_label">English Label</string>
+    <string name="add_label">Add Label</string>
+    <string name="save">Save</string>
+    <string name="reset">Reset</string>
+    <string name="top">Top</string>
+    <string name="center">Center</string>
+    <string name="bottom">Bottom</string>
+    <string name="left">Left</string>
+    <string name="right">Right</string>
+    <string name="capture_button_color">Capture Button Color</string>
+    <string name="enable_shadow">Enable Shadow</string>
+    <string name="mrz_retry_count">MRZ retry count</string>
+    <string name="barcode_retry_count">BARCODE retry count</string>
+    <string name="mrz_barcode_retry_count">MRZ and BARCODE retry count</string>
+    <string name="active">Active</string>
+    <string name="passive">Passive</string>
+    <string name="extracted_data">Extracted Data:</string>
+
+    <string name="default_font_type">DEFAULT</string>
+    <string name="default_bold">DEFAULT_BOLD</string>
+    <string name="san_serif">SANS_SERIF</string>
+    <string name="serif">SERIF</string>
+    <string name="monospace">MONOSPACE</string>
+
+    <string name="normal">NORMAL</string>
+    <string name="bold">BOLD</string>
+    <string name="italic">ITALIC</string>
+    <string name="bold_italic">BOLD_ITALIC</string>
+
+    <string name="thin">Thin</string>
+    <string name="thick">Thick</string>
+
+    <string name="none">None</string>
+    <string name="title_image_1">Title Image 1</string>
+
+    <string name="low">Low</string>
+    <string name="medium">Medium</string>
+    <string name="all">All</string>
+    <string name="zero">Zero</string>
+
+    <!-- 4F Capture-->
+    <string name="focus_threshold">Focus Threshold</string>
+    <string name="glare_threshold">Glare Threshold</string>
+    <string name="no_of_finger_to_check_focus">No. of Finger to check focus</string>
+    <string name="index_finger_min">Index Finger(Min)</string>
+    <string name="index_finger_max">Index Finger(Max)</string>
+    <string name="middle_finger_Min">Middle Finger(Min)</string>
+    <string name="middle_finger_Max">Middle Finger(Max)</string>
+    <string name="ring_finger_min">Ring Finger(Min)</string>
+    <string name="ring_finger_max">Ring Finger(Max)</string>
+    <string name="baby_finger_min">Baby Finger(Min)</string>
+    <string name="baby_finger_max">Baby Finger(Max)</string>
+    <string name="save_image_width">Save Image Width</string>
+    <string name="save_image_height">Save Image Height</string>
+    <string name="aggresiveness_factor">Aggresiveness Factor</string>
+    <string name="far_percentage">Far Percentage</string>
+    <string name="too_far_percentage">Too Far Percentage</string>
+    <string name="minimum_NFIQ_value">Minimum NFIQ Value</string>
+    <string name="device_timeout">Device Timeout</string>
+    <string name="image_size">Image Size(KB)</string>
+    <string name="select_finger">Select Finger</string>
+    <string name="clear">Clear</string>
+    <string name="clear_fp_data">Clear Fingerprint Data</string>
+    <string name="enter_finger_count">Please enter finger count</string>
+    <string name="enter_glare_percentage">Please enter glare percentage</string>
+    <string name="enter_focus_threshold">Please enter focus threshold</string>
+    <string name="zoom">Zoom</string>
+    <string name="ridge_width">Ridge Width</string>
+    <string name="finger_length_percentage">Finger length percentage</string>
+    <string name="sharp_threshold">Sharp threshold</string>
+    <string name="counter_for_finger_width_average">Finger width average(Counter)</string>
+    <string name="capture_finger">Capture Finger</string>
+    <string name="keep_finger">Keep Finger</string>
+    <string name="index_finger">Index</string>
+    <string name="middle_finger">Middle</string>
+    <string name="ring_finger">Ring</string>
+    <string name="baby_finger">Baby</string>
+
+    <!-- Selfie Capture-->
+    <string name="face_image_type">Face Image Type</string>
+    <string name="face_detection_threshold">Face Detection Threshold</string>
+    <string name="face_eye_open_threshold">Eyes Open Threshold</string>
+    <string name="face_spoof_detection_threshold">Spoof Detection Threshold</string>
+    <string name="launch_front_camera">Launch Front Camera</string>
+    <string name="toggle_camera">Toggle Camera</string>
+    <string name="show_preview_screen">Show Preview Screen</string>
+    <string name="face_outline_color">Face Outline Color</string>
+    <string name="detect_face_outline_color">Detect Face Outline Color</string>
+    <string name="outside_color_of_face_outLine">Outside Color of Face OutLine</string>
+    <string name="outside_detected_color_of_face_outline">Outside Detected Color of Face Outline</string>
+    <string name="face_title_alignment">Face title alignment</string>
+    <string name="hide_face_title">Hide face title</string>
+    <string name="face_hint_message_alignment">Face hint message alignment</string>
+    <string name="hide_face_hint_message">Hide face hint message</string>
+    <string name="face_hint_icon_alignment">Face hint icon alignment</string>
+    <string name="hide_face_hint_icon">Hide face hint icon</string>
+    <string name="face_title_image_alignment">Face title image alignment</string>
+    <string name="hide_face_title_image">Hide face title image</string>
+    <string name="show_custom_overlay">Show custom overlay</string>
+    <string name="face_capture_label">Face capture label</string>
+    <string name="spanish_label">Spanish Label</string>
+    <string name="face_contours">Face contours</string>
+    <string name="title_image">Select Title Image</string>
+    <string name="live_face_not_detected">Live face not detected.</string>
+    <string name="face_detection_method">Face Detection Method</string>
+
+    <!-- video Capture-->
+    <string name="video_recording_time">Video Recording Time(Second)</string>
+    <string name="text_data">Enter Text Data</string>
+
+    <!-- video Conference-->
+    <string name="video_conference_width">Width</string>
+    <string name="video_conference_height">Height</string>
+    <string name="video_conference_framerate">Frame rate</string>
+
+    <!-- voice Capture-->
+    <string name="voice_recording_time">Voice Recording Time(Second)</string>
+    <string name="enter_time">Please enter time</string>
+    <string name="voice_button_color">Voice Button Color</string>
+    <string name="voice_background_color">Background Color</string>
+    <string name="voice_title_label_on_top">Title Label On Top</string>
+    <string name="voice_display_position">UI Display Position</string>
+    <string name="voice_auto_play">Auto Play</string>
+    <string name="voice_text_label_color">Text Label Color</string>
+    <string name="voice_title_label_color">Title Label Color</string>
+    <string name="voice_title_label_size">Title Label Size</string>
+    <string name="voice_text_label_size">Text Label Size</string>
+    <string name="voice_counter_label_size">Counter Label Size</string>
+    <string name="voice_recording_label">Voice Recording Label</string>
+
+    <!-- Customize product-->
+    <string name="select_group">Select Group</string>
+    <string name="enter_group_name">Enter Group Name</string>
+    <string name="select_field_name">Select Field Name</string>
+    <string name="enter_field_name">Enter Field Name</string>
+    <string name="select_field_value">Select Field Value</string>
+    <string name="enter_field_value">Enter Field Value</string>
+    <string name="add">Add</string>
+    <string name="product_config">Product Config</string>
+
+    <!-- Data Capture-->
+    <string name="manual_review_required">Manual Review Required</string>
+    <string name="bypass_age_validation">Bypass Age Validation</string>
+    <string name="bypass_name_matching">Bypass Name Matching</string>
+    <string name="deduplication_required">Deduplication Required</string>
+    <string name="need_immediate_response">Need Immediate Response</string>
+    <string name="unique_customer_number">Unique Customer Number</string>
+    <string name="customer_name">Customer Name</string>
+    <string name="service_id">Service ID</string>
+    <string name="customer_type">Customer Type</string>
+    <string name="customer_phone">Customer Phone</string>
+    <string name="customer_email">Customer Email</string>
+    <string name="customer_attribute">Customer Attribute</string>
+    <string name="unique_merchant_number">Unique Merchant Number</string>
+    <string name="unique_employee_number">Unique Employee Number</string>
+    <string name="unique_employee_code">Unique Employee Code</string>
+    <string name="old_client_customer_number">Old Client Customer Number</string>
+    <string name="gender">Gender</string>
+    <string name="address_line_1">Address Line 1</string>
+    <string name="address_line_2">Address Line 2</string>
+    <string name="country">Country</string>
+    <string name="state">State</string>
+    <string name="city">City</string>
+    <string name="postal_code">Postal Code</string>
+    <string name="capture_sec_id">Capture Secondary Id</string>
+    <string name="process_sec_id">Process Secondary Id</string>
+
+    <!-- Document Capture-->
+    <string name="capture_front">Capture Front</string>
+    <string name="enter_document_name">Enter Document Name</string>
+
+    <!-- Employee Data-->
+    <string name="employee_code">Employee Code</string>
+    <string name="employee_type">Employee Type</string>
+    <string name="employee_login_id">Employee Login Id</string>
+    <string name="employee_email">Employee Email</string>
+    <string name="employee_company_id">Employee Company Id</string>
+    <string name="employee_department">Employee Department</string>
+    <string name="employee_name">Employee Name</string>
+    <string name="employee_mobile_no">Employee Mobile No</string>
+    <string name="marital_status">Marital Status</string>
+    <string name="employee_country">Employee Country</string>
+    <string name="employee_address_line_1">Employee Address Line 1</string>
+    <string name="employee_address_line_2">Employee Address Line 2</string>
+    <string name="zip_code">ZipCode</string>
+    <string name="spouse_name">Spouse Name</string>
+    <string name="number_of_children">Number of Children</string>
+
+    <!-- Final steps-->
+    <string name="final_step">Final Step</string>
+    <string name="verify">  Verify</string>
+    <string name="extract">  Extract </string>
+    <string name="final_submit">  Final Submit </string>
+    <string name="clear_form_key">  Clear Form Key </string>
+    <string name="please_wait_msg">Please wait...</string>
+
+    <!-- Generate OTP-->
+    <string name="enter_email_id">Enter Email Id</string>
+    <string name="enter_mobile_number">Enter Mobile Number</string>
+    <string name="select_notification_type">Select Notification Type</string>
+
+    <!-- Help Dialog-->
+    <string name="help">HELP</string>
+    <string name="okay">OKAY</string>
+
+    <!-- Id Details-->
+    <string name="select_id_type">Select ID Type </string>
+    <string name="select_secondary_id_type">Select Secondary ID Type </string>
+    <string name="select_id_country">Select ID Country </string>
+    <string name="select_secondary_id_country">Select Secondary ID Country </string>
+    <string name="select_id_state">Select ID State</string>
+    <string name="enter_iso_code">Enter two letter ISO code for State</string>
+
+    <!-- POA Capture-->
+    <string name="address_1">Address 1</string>
+    <string name="address_2">Address 2</string>
+
+    <!-- Process flow-->
+    <string name="select_service">Select Service</string>
+    <string name="id_validation_and_face_Match">ID Validation and Face Match: Service ID</string>
+    <string name="need_additional_features">Need Additional features?</string>
+    <string name="signature_capture">Signature Capture</string>
+    <string name="document_capture">Document Capture</string>
+    <string name="voice_capture">Voice Capture</string>
+    <string name="fingerprint_capture">Fingerprint Capture</string>
+    <string name="fingerprint_capture_4F">Fingerprint Capture(4F)</string>
+    <string name="location_capture">Location/GPS Capture</string>
+    <string name="video_capture">Video Capture</string>
+    <string name="image_snippet_OCR">Image Snippet OCR</string>
+    <string name="barcode_scan">Barcode Scan</string>
+    <string name="card_capture">Card Capture</string>
+    <string name="slant_capture">Slant ID Capture</string>
+    <string name="video_conference">Video Conference</string>
+    <string name="capture_secondary_id">Capture Secondary ID </string>
+    <string name="capture_secondary_id_back">Secondary ID Back</string>
+    <string name="capture_secondary_id_front">Secondary ID Front</string>
+    <!--<string name="INITIALIZE">INITIALIZE</string>-->
+    <string name="continue_btn">CONTINUE</string>
+
+    <!-- Result View-->
+    <string name="done">Done</string>
+    <string name="download_on">Downloaded on</string>
+
+    <!-- Splash screen-->
+    <string name="splash_screen">Splash Screen</string>
+    <string name="version">Version</string>
+
+    <!-- Snippet capture-->
+    <string name="add_field">Add Field</string>
+    <string name="enable_capture_button">Enable Capture Button</string>
+    <string name="enable_capture_label">Enter Capture Label</string>
+    <string name="fields">Fields </string>
+    <string name="fields_blank_msg">Field name should not be blank</string>
+    <string name="please_add_field">Please Add Field</string>
+    <string name="snippet_result_data">Snippet Result Data</string>
+
+    <!-- Verify OTP-->
+    <string name="enter_otp">Enter OTP</string>
+
+    <!--View Pager-->
+    <string name="capture_id_front_tab">Capture ID Front</string>
+    <string name="capture_id_back_tab">Capture ID Back</string>
+    <string name="selfie_capture_tab">Selfie Capture</string>
+    <string name="signature_capture_tab">Signature Capture</string>
+    <string name="document_capture_tab">Document Capture</string>
+    <string name="voice_capture_tab">Voice Capture</string>
+    <string name="fingerprint_capture_tab">Fingerprint Capture</string>
+    <string name="fingerprint_capture_4f_tab">Fingerprint Capture(4F)</string>
+    <string name="location_capture_tab">Location/GPS Capture</string>
+    <string name="video_capture_tab">Video Capture</string>
+    <string name="image_snippet_OCR_tab">Image Snippet OCR</string>
+    <string name="barcode_scan_tab">Barcode Scan</string>
+    <string name="poa_capture_tab">POA Capture</string>
+    <string name="selfie_employee_tab">Selfie Employee</string>
+    <string name="selfie_customer_tab">Selfie Customer</string>
+    <string name="define_product_tab">Define Product</string>
+    <string name="card_capture_tab">Card Capture</string>
+    <string name="generate_OTP_data_tab">Generate OTP Data</string>
+    <string name="verify_OTP_data_tab">Verify OTP Data</string>
+    <string name="data_captur_tab">Data Capture</string>
+    <string name="employee_data_tab">Employee Data</string>
+    <string name="slant_capture_tab">Slant ID Capture</string>
+    <string name="video_conference_tab">Video Conference</string>
+    <string name="sec_id_details_tab">Secondary ID Details</string>
+    <string name="capture_sec_id_front_tab">Capture Secondary ID Front</string>
+    <string name="capture_sec_id_back_tab">Capture Secondary ID Back</string>
+    <string name="auto_fill_tab">Capture Front(Autofill)</string>
+    <string name="auto_fill_back_tab">Capture Back(Autofill)</string>
+
+    <!-- Location-->
+    <string name="location">Location</string>
+    <string name="latitude">Latitude :</string>
+    <string name="longitude">Longitude :</string>
+
+    <!-- Service Id & Descriptions-->
+    <string name="idv_face_match">10 IDV+Face Match</string>
+    <string name="idv_face_match_temp">999 IDV+Face Match</string>
+    <string name="idv_only">20 IDV Only</string>
+    <string name="idv_only_cust">25 IDV Only w/Cust Enroll</string>
+    <string name="idv_only_emp">30 IDV Only w/Emp Enroll</string>
+    <string name="idv_face_match_cust">50 IDV+Face Match w/Cust Enroll</string>
+    <string name="idv_face_match_emp">55 IDV+Face Match w/Emp Enroll</string>
+    <string name="face_match_cus">60 Face Match Only w/Cust Enroll</string>
+    <string name="face_match_only">65 Face Match Only</string>
+    <string name="customer_update_service">70 Customer Update</string>
+    <string name="employee_update_service">75 Employee Update</string>
+    <string name="idv_face_match_cust_enroll_77">77 IDV+Face Match w/Cust Enroll</string>
+    <string name="idv_face_match_cust_enroll_78">78 IDV+Face Match w/Cust Enroll</string>
+    <string name="idv_face_match_cust_minor">80 IDV+Face Match w/Cust Minor Enroll</string>
+    <string name="customer_verification">100 Customer Verification</string>
+    <string name="customer_verification_105">105 Customer Verification</string>
+    <string name="idv_video_match">155 IDV+Video Match</string>
+    <string name="idv_video_match_cust">160 IDV+Video Match w/Cust Enroll</string>
+    <string name="idv_video_match_emp">165 IDV+Video Match w/Emp Enroll</string>
+    <string name="cust_enroll_biometrics">175 Cust Enroll w/Biometrics</string>
+    <string name="emp_enroll_biometrics">180 Emp Enroll w/Biometrics</string>
+    <string name="address_processing">200 Address Processing</string>
+    <string name="employee_verification">300 Employee Verification</string>
+    <string name="employee_verification_305">305 Employee Verification</string>
+    <string name="face_match_only_emp">310 Face Match Only w/Emp Enroll</string>
+    <string name="create_customer_override_service">320 Create Customer(Override)</string>
+    <string name="create_employee_override_service">330 Create Employee(Override)</string>
+    <string name="id_validation_face_match_primary_id">360 Id Validation &amp; Face Match(Primary ID)</string>
+    <string name="id_validation_face_match_secondary_id">361 Id Validation &amp; Face Match(Secondary ID)</string>
+    <string name="otp_generation">400 OTP Generation</string>
+    <string name="token_generation">401 Token Generation</string>
+    <string name="otp_verification">410 OTP Verification</string>
+    <string name="customer_search">186 Customer Search</string>
+    <string name="employee_search">191 Employee Search</string>
+    <string name="idv_video_conf_match">505 IDV+Video Conference Match</string>
+    <string name="video_conf_match">500 VideoConference Face Match</string>
+    <string name="idv_video_conf_cust_match">510 IDV+Video Conference Match w/Customer Enrollment</string>
+    <string name="idv_video_conf_emp_match">515 IDV+Video Conference Match w/Employee Enrollment</string>
+    <string name="identify_cus_with_biometrics">185 Identify Customer with Biometrics</string>
+    <string name="identify_emp_with_biometrics">190 Identify Employee with Biometrics</string>
+    <string name="auto_fill_service">620 Auto Fill(MRZ, BARCODE) </string>
+    <string name="offline_face_service">660 Offline Live Face</string>
+
+    <string name="idv_face_match_des">Capturing ID document(s), validate the ID and extract data from it. Additionally capture a selfie and match it against the photo on the ID.</string>
+    <string name="idv_only_des">Capturing ID document(s), validate the ID and extract data from it.</string>
+    <string name="idv_only_cust_des">Capturing ID document(s) for a customer, validate the ID and extract data from it. Additionally any biometric is captured to enroll the customer.</string>
+    <string name="idv_only_emp_des">Capturing ID document(s) for an employee, validate the ID and extract data from it. Additionally any biometric is captured to enroll the customer.</string>
+    <string name="idv_face_match_cust_des">Capturing ID document(s), validate that ID and extract data from it. Additionally capture a selfie of the customer and match it against the photo on the ID, then enroll all captured biometrics with the customer if the match is positive.</string>
+    <string name="idv_face_match_emp_des">Capturing ID document(s), validate the ID and extract data from it.Additionally capture a selfie of the employee and match it against the photo on the ID, then enroll all captured biometrics with the employee if the match is positive.</string>
+    <string name="face_match_cus_des">Capturing ID document(s), additionally capture a selfie of the customer and match it against the photo on the ID. Once verified the customer is enrolled.</string>
+    <string name="face_match_only_des">Capturing ID document(s), additionally capture a selfie of the customer and match it against the photo on the ID.</string>
+    <string name="customer_update_service_des">Capture of any new/updated customer data to update the previously enrolled customer record.</string>
+    <string name="employee_update_service_des">Capture of any new/updated employee data to update the previously enrolled employee record.</string>
+    <string name="idv_face_match_cust_enroll_77_des">Capturing ID document(s), validate that ID and extract data from it. Additionally capture a selfie of the customer and match it against the photo on the ID, then enroll all captured biometrics with the customer if the match is positive.</string>
+    <string name="idv_face_match_cust_enroll_78_des">Capturing ID document(s), validate that ID and extract data from it. Additionally capture a selfie of the customer and match it against the photo on the ID, then enroll all captured biometrics with the customer if the match is positive.</string>
+    <string name="idv_face_match_cust_minor_des">Capturing ID document(s), validate that ID and extract data from it. Additionally capture a selfie of the customer and match it against the photo on the ID, then enroll all captured biometrics with the customer if the match is positive.</string>
+    <string name="customer_verification_des">Capture of biometric data to verify against a previously enrolled customer.</string>
+    <string name="idv_video_match_des">Capturing ID document(s), validate the ID and extract data from it. Additionally capture a video stream and use it to match the face against the ID.</string>
+    <string name="idv_video_match_cust_des">Capturing ID document(s) for a customer, validate the ID and extract data from it. Additionally capture a video stream and use it to match the face against the ID, then enroll all captured biometrics with the customer.</string>
+    <string name="idv_video_match_emp_des">Capturing ID document(s) for an employee, validate the ID and extract data from it. Additionally capture a video stream and use it to match the face against the ID, then enroll all captured biometrics with the employee.</string>
+    <string name="cust_enroll_biometrics_des">Capture customer data and biometrics and enroll into the customer database. No ID documents are captured.</string>
+    <string name="emp_enroll_biometrics_des">Capture employee data and biometrics and enroll into the employee database. No ID documents are captured.</string>
+    <string name="address_processing_des">Address Matching / Verification</string>
+    <string name="employee_verification_des">Capture of biometric data to verify against a previously enrolled employee.</string>
+    <string name="face_match_only_emp_des">Capturing ID document(s), additionally capture a selfie of the employee and match it against the photo on the ID. Once verified the employee is enrolled</string>
+    <string name="create_customer_override_service_des">Create Customer using Agent Override feature, employee verification is required for the override.</string>
+    <string name="create_employee_override_service_des">Create Employee using Agent Override feature, employee verification is required for the override.</string>
+    <string name="id_validation_face_match_primary_id_des">Capturing a primary ID document(s), validate the ID and extract data from it. Additionally capture a selfie and match it against the photo on the ID.</string>
+    <string name="id_validation_face_match_secondary_id_des">Capturing a primary ID document(s), validate the ID and extract data from it. Additionally capture a selfie and match it against the photo on the ID.</string>
+    <string name="otp_generation_des">Generate a One Time PIN to be used for verification.</string>
+    <string name="token_generation_des">Token Number Generation</string>
+    <string name="otp_verification_des">Capture and Verification of a previously generated One Time PIN.</string>
+    <string name="customer_search_des">Customer Search using non biometric Information</string>
+    <string name="employee_search_des">Employee Search using non biometric Information</string>
+    <string name="idv_video_conf_match_des">Initiate a video conference session with a back office operator that will be recorded for audit purposes.</string>
+    <string name="video_conf_match_des">Capturing ID document(s), validate the ID and extract data from it. Additionally initiate a video conference session with a back office operator that will be recorded for audit purposes. A photo image from the video conference will be extracted and used to match the face against the ID.</string>
+    <string name="idv_video_conf_cust_match_des">Capturing ID document(s) for a customer, validate the ID and extract data from it. Additionally initiate a video conference session with a back office operator that will be recorded for audit purposes. A photo image from the video conference will be extracted and used to match the face against the ID, then enroll all captured biometrics with the customer.</string>
+    <string name="idv_video_conf_emp_match_des">Capturing ID document(s) for an employee, validate the ID and extract data from it. Additionally initiate a video conference session with a back office operator that will be recorded for audit purposes. A photo image from the video conference will be extracted and used to match the face against the ID, then enroll all captured biometrics with the employee.</string>
+    <string name="identify_cus_with_biometrics_des">Capture biometric data for a Customer (face, fingerprint, voice or iris) and search the customer DB to see if its already enrolled.</string>
+    <string name="identify_emp_with_biometrics_des">Capture biometric data for a Employee (face, fingerprint, voice or iris) and search the Employee DB to see if its already enrolled.</string>
+    <string name="auto_fill_service_des">Select the id type and extract data offline</string>
+    <string name="offline_face_service_des">Offline Live Face</string>
+
+    <!-- Id Country-->
+    <string name="AFG">AFGHANISTAN</string>
+    <string name="ALA">ALAND ISLANDS</string>
+    <string name="ALB">ALBANIA</string>
+    <string name="DZA">ALGERIA</string>
+    <string name="ALL">ALL</string>
+    <string name="ASM">AMERICAN SAMOA</string>
+    <string name="AND">ANDORRA</string>
+    <string name="AGO">ANGOLA</string>
+    <string name="AIA">ANGUILLA</string>
+    <string name="ATA">ANTARCTICA</string>
+    <string name="ATG">ANTIGUA AND BARBUDA</string>
+    <string name="ARG">ARGENTINA</string>
+    <string name="ARM">ARMENIA</string>
+    <string name="ABW">ARUBA</string>
+    <string name="AUS">AUSTRALIA</string>
+    <string name="AUT">AUSTRIA</string>
+    <string name="AZE">AZERBAIJAN</string>
+    <string name="BHS">BAHAMAS</string>
+    <string name="BHR">BAHRAIN</string>
+    <string name="BGD">BANGLADESH</string>
+    <string name="BRB">BARBADOS</string>
+    <string name="BLR">BELARUS</string>
+    <string name="BEL">BELGIUM</string>
+    <string name="BLZ">BELIZE</string>
+    <string name="BEN">BENIN</string>
+    <string name="BMU">BERMUDA</string>
+    <string name="BTN">BHUTAN</string>
+    <string name="BOL">BOLIVIA</string>
+    <string name="BIH">BOSNIA AND HERZEGOWINA</string>
+    <string name="BWA">BOTSWANA</string>
+    <string name="BVT">BOUVET ISLAND</string>
+    <string name="BRA">BRAZIL</string>
+    <string name="IOT">BRITISH INDIAN OCEAN TERRITORY</string>
+    <string name="BRN">BRUNEI DARUSSALAM</string>
+    <string name="BGR">BULGARIA</string>
+    <string name="BFA">BURKINA FASO</string>
+    <string name="BDI">BURUNDI</string>
+    <string name="KHM">CAMBODIA</string>
+    <string name="CMR">CAMEROON</string>
+    <string name="CAN">CANADA</string>
+    <string name="CPV">CAPE VERDE</string>
+    <string name="BES">CARIBBEAN NETHERLANDS</string>
+    <string name="CYM">CAYMAN ISLANDS</string>
+    <string name="CAF">CENTRAL AFRICAN REPUBLIC</string>
+    <string name="TCD">CHAD</string>
+    <string name="CHL">CHILE</string>
+    <string name="CHN">CHINA</string>
+    <string name="CXR">CHRISTMAS ISLAND</string>
+    <string name="CCK">COCOS (KEELING) ISLANDS</string>
+    <string name="COL">COLOMBIA</string>
+    <string name="COM">COMOROS</string>
+    <string name="COG">CONGO</string>
+    <string name="COD">CONGO THE DRC</string>
+    <string name="COK">COOK ISLANDS</string>
+    <string name="CRI">COSTA RICA</string>
+    <string name="CIV">COTE D\'IVOIRE</string>
+    <string name="HRV">CROATIA (local name: Hrvatska</string>
+    <string name="CUB">CUBA</string>
+    <string name="CUW">CURAÇAO</string>
+    <string name="CYP">CYPRUS</string>
+    <string name="CZE">CZECH REPUBLIC</string>
+    <string name="DNK">DENMARK</string>
+    <string name="DJI">DJIBOUTI</string>
+    <string name="DMA">DOMINICA</string>
+    <string name="DOM">DOMINICAN REPUBLIC</string>
+    <string name="TMP">EAST TIMOR</string>
+    <string name="ECU">ECUADOR</string>
+    <string name="EGY">EGYPT</string>
+    <string name="SLV">EL SALVADOR</string>
+    <string name="GNQ">EQUATORIAL GUINEA</string>
+    <string name="ERI">ERITREA</string>
+    <string name="EST">ESTONIA</string>
+    <string name="ETH">ETHIOPIA</string>
+    <string name="FLK">FALKLAND ISLANDS (MALVINAS)</string>
+    <string name="FRO">FAROE ISLANDS</string>
+    <string name="FJI">FIJI</string>
+    <string name="FIN">FINLAND</string>
+    <string name="FRA">FRANCE</string>
+    <string name="FXX">FRANCE METROPOLITAN</string>
+    <string name="GUF">FRENCH GUIANA</string>
+    <string name="PYF">FRENCH POLYNESIA</string>
+    <string name="ATF">FRENCH SOUTHERN TERRITORIES</string>
+    <string name="GAB">GABON</string>
+    <string name="GMB">GAMBIA</string>
+    <string name="GEO">GEORGIA</string>
+    <string name="DEU">GERMANY</string>
+    <string name="GHA">GHANA</string>
+    <string name="GIB">GIBRALTAR</string>
+    <string name="GRC">GREECE</string>
+    <string name="GRL">GREENLAND</string>
+    <string name="GRD">GRENADA</string>
+    <string name="GLP">GUADELOUPE</string>
+    <string name="GUM">GUAM</string>
+    <string name="GTM">GUATEMALA</string>
+    <string name="GGY">GUERNSEY</string>
+    <string name="GIN">GUINEA</string>
+    <string name="GNB">GUINEA-BISSAU</string>
+    <string name="GUY">GUYANA</string>
+    <string name="HTI">HAITI</string>
+    <string name="HMD">HEARD AND MC DONALD ISLANDS</string>
+    <string name="VAT">HOLY SEE (VATICAN CITY STATE)</string>
+    <string name="HND">HONDURAS</string>
+    <string name="HKG">HONG KONG</string>
+    <string name="HUN">HUNGARY</string>
+    <string name="ISL">ICELAND</string>
+    <string name="IND">INDIA</string>
+    <string name="IDN">INDONESIA</string>
+    <string name="IRN">IRAN (ISLAMIC REPUBLIC OF)</string>
+    <string name="IRQ">IRAQ</string>
+    <string name="IRL">IRELAND</string>
+    <string name="IMN">ISLE OF MAN</string>
+    <string name="ISR">ISRAEL</string>
+    <string name="ITA">ITALY</string>
+    <string name="JAM">JAMAICA</string>
+    <string name="JPN">JAPAN</string>
+    <string name="JEY">JERSEY</string>
+    <string name="JOR">JORDAN</string>
+    <string name="KAZ">KAZAKHSTAN</string>
+    <string name="KEN">KENYA</string>
+    <string name="KIR">KIRIBATI</string>
+    <string name="PRK">KOREA D.P.R.O.</string>
+    <string name="KOR">KOREA REPUBLIC OF</string>
+    <string name="RKS">KOSOVO</string>
+    <string name="KWT">KUWAIT</string>
+    <string name="KGZ">KYRGYZSTAN</string>
+    <string name="LAO">LAOS</string>
+    <string name="LVA">LATVIA</string>
+    <string name="LBN">LEBANON</string>
+    <string name="LSO">LESOTHO</string>
+    <string name="LBR">LIBERIA</string>
+    <string name="LBY">LIBYAN ARAB JAMAHIRIYA</string>
+    <string name="LIE">LIECHTENSTEIN</string>
+    <string name="LTU">LITHUANIA</string>
+    <string name="LUX">LUXEMBOURG</string>
+    <string name="MAC">MACAU</string>
+    <string name="MKD">MACEDONIA</string>
+    <string name="MDG">MADAGASCAR</string>
+    <string name="MWI">MALAWI</string>
+    <string name="MYS">MALAYSIA</string>
+    <string name="MDV">MALDIVES</string>
+    <string name="MLI">MALI</string>
+    <string name="MLT">MALTA</string>
+    <string name="MHL">MARSHALL ISLANDS</string>
+    <string name="MTQ">MARTINIQUE</string>
+    <string name="MRT">MAURITANIA</string>
+    <string name="MUS">MAURITIUS</string>
+    <string name="MYT">MAYOTTE</string>
+    <string name="MEX">MEXICO</string>
+    <string name="FSM">MICRONESIA FEDERATED STATES OF</string>
+    <string name="MDA">MOLDOVA REPUBLIC OF</string>
+    <string name="MCO">MONACO</string>
+    <string name="MNG">MONGOLIA</string>
+    <string name="MNE">MONTENEGRO</string>
+    <string name="MSR">MONTSERRAT</string>
+    <string name="MAR">MOROCCO</string>
+    <string name="MOZ">MOZAMBIQUE</string>
+    <string name="MMR">MYANMAR (Burma)</string>
+    <string name="NAM">NAMIBIA</string>
+    <string name="NRU">NAURU</string>
+    <string name="NPL">NEPAL</string>
+    <string name="NLD">NETHERLANDS</string>
+    <string name="ANT">NETHERLANDS ANTILLES</string>
+    <string name="NCL">NEW CALEDONIA</string>
+    <string name="NZL">NEW ZEALAND</string>
+    <string name="NIC">NICARAGUA</string>
+    <string name="NER">NIGER</string>
+    <string name="NGA">NIGERIA</string>
+    <string name="NIU">NIUE</string>
+    <string name="NFK">NORFOLK ISLAND</string>
+    <string name="MNP">NORTHERN MARIANA ISLANDS</string>
+    <string name="NOR">NORWAY</string>
+    <string name="OMN">OMAN</string>
+    <string name="PAK">PAKISTAN</string>
+    <string name="PLW">PALAU</string>
+    <string name="PSE">PALESTINIAN TERRITORY</string>
+    <string name="PAN">PANAMA</string>
+    <string name="PNG">PAPUA NEW GUINEA</string>
+    <string name="PRY">PARAGUAY</string>
+    <string name="PER">PERU</string>
+    <string name="PHL">PHILIPPINES</string>
+    <string name="PCN">PITCAIRN</string>
+    <string name="POL">POLAND</string>
+    <string name="PRT">PORTUGAL</string>
+    <string name="PRI">PUERTO RICO</string>
+    <string name="QAT">QATAR</string>
+    <string name="REU">REUNION</string>
+    <string name="ROU">ROMANIA</string>
+    <string name="RUS">RUSSIAN FEDERATION</string>
+    <string name="RWA">RWANDA</string>
+    <string name="BLM">SAINT BARTHELEMY</string>
+    <string name="KNA">SAINT KITTS AND NEVIS</string>
+    <string name="LCA">SAINT LUCIA</string>
+    <string name="MAF">SAINT MARTIN</string>
+    <string name="VCT">SAINT VINCENT AND THE GRENADINES</string>
+    <string name="WSM">SAMOA</string>
+    <string name="SMR">SAN MARINO</string>
+    <string name="STP">SAO TOME AND PRINCIPE</string>
+    <string name="SAU">SAUDI ARABIA</string>
+    <string name="SEN">SENEGAL</string>
+    <string name="SRB">SERBIA</string>
+    <string name="SYC">SEYCHELLES</string>
+    <string name="SLE">SIERRA LEONE</string>
+    <string name="SGP">SINGAPORE</string>
+    <string name="SXM">SINT MAARTEN</string>
+    <string name="SVK">SLOVAKIA (Slovak Republic)</string>
+    <string name="SVN">SLOVENIA</string>
+    <string name="SLB">SOLOMON ISLANDS</string>
+    <string name="SOM">SOMALIA</string>
+    <string name="ZAF">SOUTH AFRICA</string>
+    <string name="SGS">SOUTH GEORGIA AND SOUTH S.S.</string>
+    <string name="SSD">SOUTH SUDAN</string>
+    <string name="ESP">SPAIN</string>
+    <string name="LKA">SRI LANKA</string>
+    <string name="SHN">ST. HELENA</string>
+    <string name="SPM">ST. PIERRE AND MIQUELON</string>
+    <string name="SDN">SUDAN</string>
+    <string name="SUR">SURINAME</string>
+    <string name="SJM">SVALBARD AND JAN MAYEN ISLANDS</string>
+    <string name="SWZ">SWAZILAND</string>
+    <string name="SWE">SWEDEN</string>
+    <string name="CHE">SWITZERLAND</string>
+    <string name="SYR">SYRIAN ARAB REPUBLIC</string>
+    <string name="TWN">TAIWAN PROVINCE OF CHINA</string>
+    <string name="TJK">TAJIKISTAN</string>
+    <string name="TZA">TANZANIA UNITED REPUBLIC OF</string>
+    <string name="THA">THAILAND</string>
+    <string name="TGO">TOGO</string>
+    <string name="TKL">TOKELAU</string>
+    <string name="TON">TONGA</string>
+    <string name="TTO">TRINIDAD AND TOBAGO</string>
+    <string name="TUN">TUNISIA</string>
+    <string name="TUR">TURKEY</string>
+    <string name="TKM">TURKMENISTAN</string>
+    <string name="TCA">TURKS AND CAICOS ISLANDS</string>
+    <string name="TUV">TUVALU</string>
+    <string name="UMI">U.S. MINOR ISLANDS</string>
+    <string name="UGA">UGANDA</string>
+    <string name="UKR">UKRAINE</string>
+    <string name="ARE">UNITED ARAB EMIRATES</string>
+    <string name="GBR">UNITED KINGDOM</string>
+    <string name="USA">United States of America</string>
+    <string name="URY">URUGUAY</string>
+    <string name="UZB">UZBEKISTAN</string>
+    <string name="VUT">VANUATU</string>
+    <string name="VEN">VENEZUELA</string>
+    <string name="VNM">VIET NAM</string>
+    <string name="VGB">VIRGIN ISLANDS (BRITISH)</string>
+    <string name="VIR">VIRGIN ISLANDS (U.S.)</string>
+    <string name="WLF">WALLIS AND FUTUNA ISLANDS</string>
+    <string name="ESH">WESTERN SAHARA</string>
+    <string name="YEM">YEMEN</string>
+    <string name="ZMB">ZAMBIA</string>
+    <string name="ZWE">ZIMBABWE</string>
+
+    <!-- Id Type-->
+    <string name="PP">PASSPORT</string>
+    <string name="NID">NATIONAL_ID</string>
+    <string name="RID">RESIDENCE_CARD</string>
+    <string name="DL">DRIVERS_LICENSE</string>
+    <string name="PID">PHOTO_ID_CARD</string>
+    <string name="VID">VOTER_ID_CARD</string>
+    <string name="TID">TAX_ID_CARD</string>
+    <string name="WV">WORK_VISA_PERMIT</string>
+    <string name="SV">STUDENT_VISA_PERMIT</string>
+    <string name="GID">MILITARY_POLICE_GOVERNMENT_ID</string>
+    <string name="BID">BOAT_SHIP_ID_CARD</string>
+    <string name="IDM">IDM</string>
+    <string name="UBL">UTILITY_BILL</string>
+    <string name="OTH">OTHERS</string>
+
+    <!-- Face Type-->
+    <string name="face">FACE</string>
+    <string name="processed_face">PROCESSED_FACE</string>
+    <string name="oval_face">OVAL_FACE</string>
+
+    <!--QRCode Account SetUp scan_qr_code_des-->
+    <string name="qr_code_inst">Scan QR Code from My eVolv Downloads Screen to populate your Account Details.</string>
+    <string name="qr_button_title">Scan QR Code to Fill Account Details</string>
+
+    <!--Custom UI Configuration-->
+    <string name="customize_ui_configuration">Customize UI Configuration</string>
+    <string name="select_configuration">Select Configuration</string>
+    <string name="id_front_capture">Id Front Capture</string>
+    <string name="id_back_capture">Id Back Capture</string>
+    <string name="snippet_capture">Snippet Capture</string>
+    <string name="selfie_capture">Selfie Capture</string>
+    <string name="label_value">Label Value</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    //VideoConference
+    <string name="conference_completed">Conference completed</string>
+    <string name="conference_incompleted">Conference is incomplete. Please click again to re-join</string>
+
+    <!--Signature-->
+    <string name="trans_signature_bg">Transparent Background</string>
+
+</resources>
+

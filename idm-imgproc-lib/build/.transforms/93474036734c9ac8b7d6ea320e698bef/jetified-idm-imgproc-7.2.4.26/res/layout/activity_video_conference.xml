@@ -1,0 +1,130 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:background="#000000"
+    android:layout_height="fill_parent">
+
+    <RelativeLayout
+        android:id="@+id/cameraRL"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:visibility="gone">
+
+        <org.webrtc.SurfaceViewRenderer
+            android:id="@+id/gl_surface"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <org.webrtc.SurfaceViewRenderer
+            android:id="@+id/gl_surface_local"
+            android:layout_height="wrap_content"
+            android:layout_width="180dp"
+            android:layout_gravity="bottom"
+            android:layout_alignRight="@id/gl_surface"
+            />
+
+        <!--<org.webrtc.SurfaceViewRenderer
+            android:id="@+id/gl_surface_local"
+            android:layout_height="144dp"
+            android:layout_width="180dp"
+            android:layout_gravity="bottom"
+            android:layout_alignRight="@id/gl_surface"
+            />-->
+
+        <LinearLayout
+            android:id="@+id/controls_2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_alignParentTop="true"
+            android:gravity="left">
+
+
+            <ImageButton
+                android:id="@+id/stop_conference"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="#00000000"
+                android:src="@drawable/cancel_click_black"
+                android:layout_gravity="left"
+                />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_status"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:shadowColor="@android:color/black"
+            android:background="@android:color/black"
+            android:shadowRadius="8"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@android:color/white"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:text=""/>
+
+        <LinearLayout
+            android:id="@+id/controls"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="60dp"
+            android:orientation="horizontal"
+            android:layout_alignParentBottom="true"
+            android:gravity="center">
+
+            <ImageButton
+                android:id="@+id/micToggle"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:visibility="gone"
+                android:background="@drawable/button_bg_round"
+                android:src="@drawable/mic_on" />
+
+            <ImageButton
+                android:id="@+id/videoFeedToggle"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:visibility="gone"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/button_bg_round"
+                android:src="@drawable/video_on" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/cameraRLWait"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <ImageView
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/user_connect"/>
+
+        <TextView
+            android:id="@+id/tv_status_static"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@android:color/white"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:text="@string/please_wait_conference"/>
+        <ImageButton
+            android:id="@+id/stop_conference1"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="#00000000"
+            android:src="@drawable/cancel_click_black"
+            android:layout_gravity="left"
+            />
+    </RelativeLayout>
+</RelativeLayout>

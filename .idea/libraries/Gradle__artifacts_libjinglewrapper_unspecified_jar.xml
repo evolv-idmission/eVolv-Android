@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="Gradle: artifacts:libjinglewrapper:unspecified@jar">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/libjinglewrapper/build/.transforms/3bc672724574ea854062da66003a7ca2/libjinglewrapper/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/libjinglewrapper/build/.transforms/3bc672724574ea854062da66003a7ca2/libjinglewrapper/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

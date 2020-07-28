@@ -1,0 +1,17 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    xmlns:tools="http://schemas.android.com/tools"
+4    package="fi.vtt.nubomedia.webrtcpeerandroid"
+5    android:versionCode="1"
+6    android:versionName="1.1.1" >
+7
+8    <uses-sdk
+8-->/Users/monuv/Documents/Projects/AndroidApps/Android/Github_Project/eVolv_android/webrtcpeer-android/src/main/AndroidManifest.xml:6:5-78
+9        android:minSdkVersion="19"
+9-->/Users/monuv/Documents/Projects/AndroidApps/Android/Github_Project/eVolv_android/webrtcpeer-android/src/main/AndroidManifest.xml:6:5-78
+10        android:targetSdkVersion="28"
+10-->/Users/monuv/Documents/Projects/AndroidApps/Android/Github_Project/eVolv_android/webrtcpeer-android/src/main/AndroidManifest.xml:6:5-78
+11        tools:overrideLibrary="webrtc.org.libjingle_peerconnection" />
+11-->/Users/monuv/Documents/Projects/AndroidApps/Android/Github_Project/eVolv_android/webrtcpeer-android/src/main/AndroidManifest.xml:6:15-76
+12
+13</manifest>

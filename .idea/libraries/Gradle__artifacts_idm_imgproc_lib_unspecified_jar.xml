@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="Gradle: artifacts:idm-imgproc-lib:unspecified@jar">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/idm-imgproc-lib/build/.transforms/a0af45a57fdd88a1b43bdf8824abb3ff/jetified-idm-imgproc-7.3.1.2/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/idm-imgproc-lib/build/.transforms/a0af45a57fdd88a1b43bdf8824abb3ff/jetified-idm-imgproc-7.3.1.2/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

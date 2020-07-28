@@ -1,0 +1,212 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_weight="1">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/linear_layout_final_step"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/text_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/final_step"
+                    android:textColor="@color/gray_dark"
+                    android:textSize="22dp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:id="@+id/verify_block"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <CheckBox
+                        android:id="@+id/checkbox_verify"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:text="@string/verify"
+                        android:textColor="@color/gray_dark"
+                        android:textSize="18dp"
+                        android:theme="@style/CheckBox" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/info" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/extract_block"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <CheckBox
+                        android:id="@+id/checkbox_extract"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:text="@string/extract"
+                        android:textColor="@color/gray_dark"
+                        android:textSize="18dp"
+                        android:theme="@style/CheckBox" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/info" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/final_submit_block"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:id="@+id/checkbox_final_submit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:text="@string/final_submit"
+                        android:textColor="@color/gray_dark"
+                        android:textSize="18dp"
+                        android:theme="@style/CheckBox" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/info" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/clear_formkey_block"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:id="@+id/checkbox_clear_form_key"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:text="@string/clear_form_key"
+                        android:textColor="@color/gray_dark"
+                        android:textSize="18dp"
+                        android:theme="@style/CheckBox" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/info" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!--<Button-->
+            <!--android:id="@+id/button_process_image"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="40dp"-->
+            <!--android:layout_margin="5dp"-->
+            <!--android:background="@drawable/button_style"-->
+            <!--android:drawableRight="@drawable/info_white"-->
+            <!--android:paddingRight="10dp"-->
+            <!--android:textAllCaps="false"-->
+            <!--android:textColor="@color/white" />-->
+
+            <Button
+                android:id="@+id/button_process_image"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/button_style"
+                android:paddingRight="10dp"
+                android:textAllCaps="false"
+                android:textColor="@color/white" />
+
+            <Button
+                android:id="@+id/button_generic_call"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/button_style"
+                android:paddingRight="10dp"
+                android:textAllCaps="false"
+                android:text="Final Submit"
+                android:textColor="@color/white" />
+
+            <Button
+                android:id="@+id/button_done"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/button_style"
+                android:paddingRight="10dp"
+                android:textAllCaps="false"
+                android:text="@string/done"
+                android:textColor="@color/white"
+                android:visibility="gone"/>
+
+            <Button
+                android:id="@+id/button_back"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/button_style"
+                android:paddingRight="10dp"
+                android:text="@string/back"
+                android:textAllCaps="false"
+                android:textColor="@color/white" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Core/Core.iml" filepath="$PROJECT_DIR$/Core/Core.iml" group="eVolv_android/Core" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" group="eVolv_android/app" />
+      <module fileurl="file://$PROJECT_DIR$/card.io/card.io.iml" filepath="$PROJECT_DIR$/card.io/card.io.iml" group="eVolv_android/card.io" />
+      <module fileurl="file://$PROJECT_DIR$/eVolv_android.iml" filepath="$PROJECT_DIR$/eVolv_android.iml" group="eVolv_android" />
+      <module fileurl="file://$PROJECT_DIR$/idm-imgproc-lib/idm-imgproc-lib.iml" filepath="$PROJECT_DIR$/idm-imgproc-lib/idm-imgproc-lib.iml" group="eVolv_android/idm-imgproc-lib" />
+      <module fileurl="file://$PROJECT_DIR$/libjinglewrapper/libjinglewrapper.iml" filepath="$PROJECT_DIR$/libjinglewrapper/libjinglewrapper.iml" group="eVolv_android/libjinglewrapper" />
+      <module fileurl="file://$PROJECT_DIR$/opencv/opencv.iml" filepath="$PROJECT_DIR$/opencv/opencv.iml" group="eVolv_android/opencv" />
+      <module fileurl="file://$PROJECT_DIR$/webrtcpeer-android/webrtcpeer-android.iml" filepath="$PROJECT_DIR$/webrtcpeer-android/webrtcpeer-android.iml" group="eVolv_android/webrtcpeer-android" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,2 @@
+configurations.maybeCreate("default")
+artifacts.add("default", file('card.io-5.5.1.aar'))

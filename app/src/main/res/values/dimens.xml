@@ -1,0 +1,14 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="nav_header_vertical_spacing">10dp</dimen>
+    <dimen name="nav_header_height">220dp</dimen>
+
+    <!-- Configuration edit text size-->
+    <dimen name="config_edit_text_size">12sp</dimen>
+    <dimen name="config_toggle_button_size">14sp</dimen>
+    <dimen name="initialization_param_text_size">14sp</dimen>
+</resources>

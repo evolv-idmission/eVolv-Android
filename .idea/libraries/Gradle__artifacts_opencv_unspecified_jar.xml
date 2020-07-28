@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="Gradle: artifacts:opencv:unspecified@jar">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/opencv/build/.transforms/2944e3bcaa005c5f085417dfa8f41c1d/OpenCV_4.1.1/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/opencv/build/.transforms/2944e3bcaa005c5f085417dfa8f41c1d/OpenCV_4.1.1/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

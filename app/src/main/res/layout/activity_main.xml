@@ -1,0 +1,2259 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:scrollbars="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusable="false"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/background_shape"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/top_heading"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:gravity="center_horizontal"
+                android:text="CUSTOM SETTINGS" />
+
+            <EditText
+                android:id="@+id/url_ET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:hint="Please Enter URL*"
+                android:text="https://demo.idmission.com/IDS/service/integ/idm/thirdparty/upsert" />
+
+            <EditText
+                android:id="@+id/loginid_ET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:hint="Login Id*" />
+
+            <EditText
+                android:id="@+id/password_ET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:hint="Password*"
+                android:inputType="textPassword" />
+
+            <EditText
+                android:id="@+id/merchantid_ET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:hint="Merchant Id*"
+                android:inputType="number" />
+
+            <EditText
+                android:id="@+id/productid_ET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:hint="Product Id*"
+                android:inputType="number" />
+
+            <EditText
+                android:id="@+id/productname_ET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:hint="Product Name*"
+                android:text="Identity_Validation_and_Face_Matching" />
+
+            <EditText
+                android:id="@+id/language_ET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:hint="Language(en, es)"
+                android:maxLength="2"
+                android:text="en" />
+
+            <CheckBox
+                android:id="@+id/enable_debug"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:checked="false"
+                android:text="Enable Debug" />
+
+            <Button
+                android:id="@+id/initBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:text="Initialize SDK" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/background_shape"
+            android:orientation="vertical">
+
+            <Spinner
+                android:id="@+id/label_key_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp" />
+
+            <EditText
+                android:id="@+id/label_value_eng_edttxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="English Label" />
+
+            <EditText
+                android:id="@+id/label_value_esp_edttxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Spanish Label" />
+
+            <Button
+                android:id="@+id/add_label_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:text="Add Label" />
+
+            <Button
+                android:id="@+id/initialize_labels"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:text="Initialize Labels" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/background_shape"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Face title alignment" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+
+                <Spinner
+                    android:id="@+id/face_title_alignment"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1" />
+
+                <CheckBox
+                    android:id="@+id/hide_Face_Title"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:checked="false"
+                    android:text="Hide face title" />
+
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Face hint message alignment" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <Spinner
+                    android:id="@+id/face_hint_msg_alignment"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1" />
+
+                <CheckBox
+                    android:id="@+id/hide_Face_hintMsg"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:checked="false"
+                    android:text="Hide face hint message" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Face hint icon alignment" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <Spinner
+                    android:id="@+id/face_hint_icon_alignment"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1" />
+
+                <CheckBox
+                    android:id="@+id/hide_Face_hintIcon"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:checked="false"
+                    android:text="Hide face hint icon" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Face title image alignment" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <Spinner
+                    android:id="@+id/face_title_image_alignment"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1" />
+
+                <CheckBox
+                    android:id="@+id/hide_Face_titleImage"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:checked="false"
+                    android:text="Hide face title image" />
+
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Id capture title alignment" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <Spinner
+                    android:id="@+id/id_capture_title_alignment"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1" />
+
+                <CheckBox
+                    android:id="@+id/hide_IDCapture_Title"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:checked="false"
+                    android:text="Hide Id capture title" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Id capture hint message alignment" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <Spinner
+                    android:id="@+id/id_capture_hint_msg_alignment"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1" />
+
+                <CheckBox
+                    android:id="@+id/hide_IDCapture_hintMsg"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:checked="false"
+                    android:text="Hide Id hint message" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Id capture title image alignment" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <Spinner
+                    android:id="@+id/id_capture_title_img_alignment"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1" />
+
+                <CheckBox
+                    android:id="@+id/hide_IDCapture_titleImg"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:checked="false"
+                    android:text="Hide Id title image" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/customize_ui_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:text="Customize User Interface" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/background_shape"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/customer_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:hint="Customer Name" />
+
+            <EditText
+                android:id="@+id/unique_customer_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:hint="Unique Customer Number" />
+
+            <EditText
+                android:id="@+id/unique_merchant_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:hint="Unique Merchant Number" />
+
+            <EditText
+                android:id="@+id/service_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:hint="Service ID" />
+
+            <EditText
+                android:id="@+id/customer_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:hint="Customer Type" />
+
+            <EditText
+                android:id="@+id/customer_attribute"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:hint="Customer Attribute" />
+
+            <EditText
+                android:id="@+id/customer_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:hint="Customer Phone" />
+
+            <EditText
+                android:id="@+id/customer_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:hint="Customer Email" />
+
+            <EditText
+                android:id="@+id/unique_employee_code"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:hint="Unique Employee Code" />
+
+            <EditText
+                android:id="@+id/unique_employee_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:hint="Unique Employee Number" />
+
+            <EditText
+                android:id="@+id/Old_Client_Customer_Number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:hint="Old client Customer Number" />
+
+            <EditText
+                android:id="@+id/addressLine1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:hint="AddressLine 1" />
+
+            <EditText
+                android:id="@+id/addressLine2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:hint="AddressLine 2" />
+
+            <EditText
+                android:id="@+id/country"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:hint="Country" />
+
+            <EditText
+                android:id="@+id/state"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:hint="State" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/background_shape"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/imageCaptureLightThreshold_ET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:hint="Light Threshold"
+                android:inputType="number"
+                android:maxLength="3"
+                android:text="60" />
+
+            <EditText
+                android:id="@+id/imageCaptureMinFocusThreshold_ET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:hint="Min. Focus Threshold"
+                android:inputType="number"
+                android:maxLength="2"
+                android:text="20" />
+
+            <EditText
+                android:id="@+id/imageCaptureMaxFocusThreshold_ET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:hint="Max. Focus Threshold"
+                android:inputType="number"
+                android:maxLength="2"
+                android:text="25" />
+
+            <EditText
+                android:id="@+id/imageCaptureGlarePercentage_ET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:hint="Glare Percentage"
+                android:inputType="number"
+                android:maxLength="3"
+                android:text="2" />
+
+            <EditText
+                android:id="@+id/enableCaptureButtonTiming_ET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:hint="Enable Capture Button Time(Second)"
+                android:inputType="number"
+                android:maxLength="3"
+                android:text="15" />
+
+            <EditText
+                android:id="@+id/maxImageSize_ET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:hint="Max Image Size(kb)"
+                android:inputType="number"
+                android:maxLength="4"
+                android:text="500" />
+
+            <EditText
+                android:id="@+id/imageHeight_ET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:hint="Image Height"
+                android:inputType="number"
+                android:maxLength="4"
+                android:text="830" />
+
+            <EditText
+                android:id="@+id/imageWidth_ET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:hint="Image Width"
+                android:inputType="number"
+                android:maxLength="4"
+                android:text="1170" />
+
+            <CheckBox
+                android:id="@+id/capture_portrait"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:checked="true"
+                android:text="Capture Portrait" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Id outline color" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/id_outline_color"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="RRGGBB"
+                    android:maxLength="6"
+                    android:text="" />
+
+                <EditText
+                    android:id="@+id/id_outline_color_alpha"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_weight="1"
+                    android:hint="Transparency(1-100)"
+                    android:inputType="number"
+                    android:maxLength="3"
+                    android:text="" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Detected Id outline color" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/detected_id_outline_color"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="RRGGBB"
+                    android:maxLength="6"
+                    android:text="" />
+
+                <EditText
+                    android:id="@+id/detected_id_outline_color_alpha"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_weight="1"
+                    android:hint="Transparency(1-100)"
+                    android:inputType="number"
+                    android:maxLength="3"
+                    android:text="" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Color outside outline" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/outside_id_outline_color"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="RRGGBB"
+                    android:maxLength="6"
+                    android:text="" />
+
+                <EditText
+                    android:id="@+id/outside_id_outline_color_alpha"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_weight="1"
+                    android:hint="Transparency(1-100)"
+                    android:inputType="number"
+                    android:maxLength="3"
+                    android:text="" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Detected Color outside outline" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/detected_outside_id_outline_color"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="RRGGBB"
+                    android:maxLength="6"
+                    android:text="" />
+
+                <EditText
+                    android:id="@+id/detected_outside_id_outline_color_alpha"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_weight="1"
+                    android:hint="Transparency(1-100)"
+                    android:inputType="number"
+                    android:maxLength="3"
+                    android:text="" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Set title image" />
+
+            <Spinner
+                android:id="@+id/set_title_imageCapture"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp" />
+
+            <CheckBox
+                android:id="@+id/show_instruction_id_capture"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:checked="false"
+                android:text="Show Instruction Screen" />
+
+            <Button
+                android:id="@+id/startImageProcessing"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:text="Image capture / Front" />
+
+            <Button
+                android:id="@+id/startImageProcessing1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:text="Image capture / Back" />
+
+            <EditText
+                android:id="@+id/countryId_ET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:hint="Country Code" />
+
+            <EditText
+                android:id="@+id/stateId_ET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:hint="State Code" />
+
+            <Spinner
+                android:id="@+id/idcode_ET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp" />
+
+            <CheckBox
+                android:id="@+id/isFinalSubmit_processimage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:checked="false"
+                android:text="Final Submit" />
+
+            <CheckBox
+                android:id="@+id/clearFormKey_processimage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:checked="true"
+                android:text="Clear Form Key" />
+
+            <Button
+                android:id="@+id/processImage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:text="Process Image" />
+
+            <EditText
+                android:id="@+id/snippetFieldName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:imeOptions="actionDone"
+                android:hint="Fields" />
+
+            <Button
+                android:id="@+id/addFieldName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:text="Add Field" />
+
+            <CheckBox
+                android:id="@+id/capture_enable_cb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:checked="true"
+                android:text="Enable Capture Button" />
+
+            <Button
+                android:id="@+id/snippetCapture"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:text="Snippet Capture" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/background_shape"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/faceLightThreshold_ET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:hint="Light Threshold"
+                android:inputType="number"
+                android:maxLength="3"
+                android:text="60" />
+
+            <EditText
+                android:id="@+id/faceFocusThreshold_ET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:hint="Focus Threshold"
+                android:inputType="number"
+                android:maxLength="2"
+                android:text="20" />
+
+            <EditText
+                android:id="@+id/faceDetectionThreshold_ET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:hint="Face Detection Threshold"
+                android:inputType="number"
+                android:maxLength="2"
+                android:text="35" />
+
+            <EditText
+                android:id="@+id/maxImageSize_FACE_ET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:hint="Max Image Size(kb)"
+                android:inputType="number"
+                android:maxLength="4"
+                android:text="500" />
+
+            <CheckBox
+                android:id="@+id/launchFrontCameraCheckBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:checked="true"
+                android:text="Launch Front Camera" />
+
+            <CheckBox
+                android:id="@+id/toggleCameraCheckBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:checked="false"
+                android:text="Toggle Camera" />
+
+            <CheckBox
+                android:id="@+id/showPreviewScreenCheckBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:checked="true"
+                android:text="Show Preview Screen" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Face outline colour" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/face_outline_normal"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="RRGGBB"
+                    android:maxLength="6"
+                    android:text="" />
+
+                <EditText
+                    android:id="@+id/face_outline_normal_alpha"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_weight="1"
+                    android:hint="Transparency(1-100)"
+                    android:inputType="number"
+                    android:maxLength="3"
+                    android:text="" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Detected face outline colour" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/face_outline_detected"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="RRGGBB"
+                    android:maxLength="6"
+                    android:text="" />
+
+                <EditText
+                    android:id="@+id/face_outline_detected_alpha"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_weight="1"
+                    android:hint="Transparency(1-100)"
+                    android:inputType="number"
+                    android:maxLength="3"
+                    android:text="" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Outside colour of face outline" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/outside_face_outline_color"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="RRGGBB"
+                    android:maxLength="6"
+                    android:text="" />
+
+                <EditText
+                    android:id="@+id/outside_face_outline_color_alpha"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_weight="1"
+                    android:hint="Transparency(1-100)"
+                    android:inputType="number"
+                    android:maxLength="3"
+                    android:text="" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Outside detected colour of face outline" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/outside_detected_face_outline_color"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="RRGGBB"
+                    android:maxLength="6"
+                    android:text="" />
+
+                <EditText
+                    android:id="@+id/outside_detected_face_outline_color_alpha"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_weight="1"
+                    android:hint="Transparency(1-100)"
+                    android:inputType="number"
+                    android:maxLength="3"
+                    android:text="" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Set title image" />
+
+            <Spinner
+                android:id="@+id/set_title_image"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp" />
+
+            <CheckBox
+                android:id="@+id/show_instruction_face_detect"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:checked="false"
+                android:text="Show Instruction Screen" />
+
+            <Button
+                android:id="@+id/captureFace"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:text="Detect Face" />
+
+            <Spinner
+                android:id="@+id/faceImageType_ET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp" />
+
+            <Spinner
+                android:id="@+id/idImageType_ET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp" />
+
+            <CheckBox
+                android:id="@+id/isFinalSubmit_matchface"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:checked="false"
+                android:text="Final Submit" />
+
+            <CheckBox
+                android:id="@+id/clearFormKey_matchface"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:checked="true"
+                android:text="Clear Form Key" />
+
+            <Button
+                android:id="@+id/matchFaceImage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:text="Match Face" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/background_shape"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/updateCustomerButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:text="Update Customer" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/background_shape"
+            android:orientation="vertical">
+
+            <Spinner
+                android:id="@+id/verification_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp" />
+            <CheckBox
+                android:id="@+id/clearFormKey_verifyCustomer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:checked="true"
+                android:text="Clear Form Key" />
+
+            <Button
+                android:id="@+id/verifyCustomerButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:text="Verify Customer" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/background_shape"
+            android:orientation="vertical">
+
+            <CheckBox
+                android:id="@+id/isFinalSubmit_process_and_match"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:checked="false"
+                android:text="Final Submit" />
+
+            <CheckBox
+                android:id="@+id/clearFormKey_process_and_match"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:checked="true"
+                android:text="Clear Form Key" />
+
+            <Button
+                android:id="@+id/processImageAndMatchFace"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="Process Image and Match Face" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/detectCard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="10dp"
+            android:text="Detect Card" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/background_shape"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/imageCaptureLightThreshold_POA_ET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:hint="Light Threshold"
+                android:inputType="number"
+                android:maxLength="3"
+                android:text="60" />
+
+            <EditText
+                android:id="@+id/imageCaptureMinFocusThreshold_POA_ET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:hint="Min. Focus Threshold"
+                android:inputType="number"
+                android:maxLength="2"
+                android:text="20" />
+
+            <EditText
+                android:id="@+id/imageCaptureMaxFocusThreshold_POA_ET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:hint="Max. Focus Threshold"
+                android:inputType="number"
+                android:maxLength="2"
+                android:text="25" />
+
+            <EditText
+                android:id="@+id/imageCaptureGlarePercentage_POA_ET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:hint="Glare Percentage"
+                android:inputType="number"
+                android:maxLength="3"
+                android:text="2" />
+
+            <EditText
+                android:id="@+id/enableCaptureButtonTiming_POA_ET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:hint="Enable Capture Button Time(Second)"
+                android:inputType="number"
+                android:maxLength="3"
+                android:text="15" />
+
+            <EditText
+                android:id="@+id/maxImageSize_POA_ET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:hint="Max Image Size(kb)"
+                android:inputType="number"
+                android:maxLength="4"
+                android:text="500" />
+
+            <EditText
+                android:id="@+id/imageHeight_POA_ET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:hint="Image Height"
+                android:inputType="number"
+                android:maxLength="4"
+                android:text="830" />
+
+            <EditText
+                android:id="@+id/imageWidth_POA_ET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:hint="Image Width"
+                android:inputType="number"
+                android:maxLength="4"
+                android:text="1170" />
+
+            <CheckBox
+                android:id="@+id/capture_portrait_for_POA"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:checked="true"
+                android:text="Capture Portrait" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Id outline color" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/id_outline_color_for_POA"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="RRGGBB"
+                    android:maxLength="6"
+                    android:text="" />
+
+                <EditText
+                    android:id="@+id/id_outline_color_alpha_for_POA"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_weight="1"
+                    android:hint="Transparency(1-100)"
+                    android:inputType="number"
+                    android:maxLength="3"
+                    android:text="" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Detected Id outline color" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/detected_id_outline_color_for_POA"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="RRGGBB"
+                    android:maxLength="6"
+                    android:text="" />
+
+                <EditText
+                    android:id="@+id/detected_id_outline_color_alpha_for_POA"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_weight="1"
+                    android:hint="Transparency(1-100)"
+                    android:inputType="number"
+                    android:maxLength="3"
+                    android:text="" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Color outside outline" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/id_outside_outline_color_for_POA"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="RRGGBB"
+                    android:maxLength="6"
+                    android:text="" />
+
+                <EditText
+                    android:id="@+id/id_outside_outline_alpha_for_POA"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_weight="1"
+                    android:hint="Transparency(1-100)"
+                    android:inputType="number"
+                    android:maxLength="3"
+                    android:text="" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Detected Color outside outline" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/detected_id_outside_outline_color_for_POA"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="RRGGBB"
+                    android:maxLength="6"
+                    android:text="" />
+
+                <EditText
+                    android:id="@+id/detected_id_outside_outline_alpha_for_POA"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_weight="1"
+                    android:hint="Transparency(1-100)"
+                    android:inputType="number"
+                    android:maxLength="3"
+                    android:text="" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Set title image" />
+
+            <Spinner
+                android:id="@+id/set_title_image_poa"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp" />
+
+            <CheckBox
+                android:id="@+id/show_instruction_poa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:checked="false"
+                android:text="Show Instruction Screen" />
+
+            <Button
+                android:id="@+id/capturePOA"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:text="Capture Proof Of Address" />
+
+            <Button
+                android:id="@+id/captureBankStatement"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:text="Capture Bank Statement" />
+
+            <Button
+                android:id="@+id/captureBirthCertificate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:text="Capture Birth Certificate" />
+
+            <EditText
+                android:id="@+id/id_field_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:hint="Enter field name"
+                android:imeOptions="actionDone"
+                android:singleLine="true" />
+
+            <Button
+                android:id="@+id/captureGenericDocument"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Generic Document Capture" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/background_shape"
+            android:orientation="vertical">
+
+            <CheckBox
+                android:id="@+id/id_do_verify"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:checked="false"
+                android:text="Verify" />
+
+            <CheckBox
+                android:id="@+id/id_do_extract"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:checked="false"
+                android:text="Extract" />
+
+            <CheckBox
+                android:id="@+id/id_is_final_submit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:checked="false"
+                android:text="Final Submit" />
+
+            <EditText
+                android:id="@+id/id_address1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:hint="Enter Address1"
+                android:imeOptions="actionDone"
+                android:singleLine="true" />
+
+            <EditText
+                android:id="@+id/id_address2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:hint="Enter Address2"
+                android:imeOptions="actionDone"
+                android:singleLine="true" />
+
+            <EditText
+                android:id="@+id/id_country"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:hint="Enter Country"
+                android:imeOptions="actionDone"
+                android:singleLine="true" />
+
+            <EditText
+                android:id="@+id/id_state"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:hint="Enter State"
+                android:imeOptions="actionDone"
+                android:singleLine="true" />
+
+            <EditText
+                android:id="@+id/id_zipcode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:hint="Enter ZipCode"
+                android:imeOptions="actionDone"
+                android:singleLine="true" />
+
+            <Button
+                android:id="@+id/capturePOAVerification"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Verify Proof Of Address" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/background_shape"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/voice_recording_timing"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:hint="Enter voice recording time(Second)"
+                android:inputType="number"
+                android:maxLength="3"
+                android:text="10" />
+
+            <Button
+                android:id="@+id/start_voice_record_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:text="Start Voice Recording" />
+
+            <Button
+                android:id="@+id/stop_voice_record_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:text="Stop Voice Recording" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/background_shape"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/four_Finger_Capture_FocusedRatio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:hint="Focus Threshold"
+                android:inputType="number"
+                android:maxLength="3"
+                android:text="15" />
+
+            <EditText
+                android:id="@+id/four_Finger_Capture_GlareRatio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:hint="Glare Threshold"
+                android:inputType="number"
+                android:maxLength="2"
+                android:text="30" />
+
+            <EditText
+                android:id="@+id/no_of_finger_to_check_focus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:hint="No. of finger to check focus"
+                android:inputType="number"
+                android:maxLength="1"
+                android:text="1" />
+
+            <Button
+                android:id="@+id/fourFingerCaptureBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="10dp"
+                android:text="Capture Finger(4F)" />
+
+        </LinearLayout>
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/background_shape"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <Spinner
+                    android:id="@+id/fingerprint_device_list_spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp" />
+
+                <Spinner
+                    android:id="@+id/finger_type_spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp" />
+
+                <EditText
+                    android:id="@+id/nfiq_value_edttxt"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Minimum NFIQ Value"
+                    android:inputType="number"
+                    android:maxLength="2"
+                    android:singleLine="true" />
+
+                <EditText
+                    android:id="@+id/timeout_value_edttxt"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Device timeout"
+                    android:inputType="number"
+                    android:maxLength="2"
+                    android:singleLine="true" />
+
+                <EditText
+                    android:id="@+id/min_img_size_edttxt"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Image Size(KB) "
+                    android:inputType="number"
+                    android:maxLength="2"
+                    android:singleLine="true" />
+
+                <Button
+                    android:id="@+id/captureFingerprintButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_margin="10dp"
+                    android:text="Capture Finger" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/clearFingerprintButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="10dp"
+                android:text="Clear Fingerprint" />
+
+            <Button
+                android:id="@+id/clearAllFingerprintButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="10dp"
+                android:text="Clear Fingerprint(All)" />
+
+            <CheckBox
+                android:id="@+id/clearFormKey_fingerprint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:checked="false"
+                android:text="Clear Form Key" />
+
+            <Button
+                android:id="@+id/enrollFingerprintButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="10dp"
+                android:text="Fingerprint Enrolment" />
+
+            <Button
+                android:id="@+id/verifyFingerprintButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="10dp"
+                android:text="Fingerprint Verification" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/background_shape"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/video_recording_timing"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:hint="Enter video recording time(Second)"
+                android:inputType="number"
+                android:maxLength="3"
+                android:text="10" />
+
+            <EditText
+                android:id="@+id/textOnVideoScreen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:hint="Enter text data " />
+
+            <Button
+                android:id="@+id/videoCaptureButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="10dp"
+                android:text="Video Recording" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/get_GPS_location_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="10dp"
+            android:text="Get GPS Location" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/background_shape"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/pickFrontImage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:text="Pick Front Images" />
+
+            <Button
+                android:id="@+id/pickBackImage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:text="Pick Back Images" />
+
+            <Button
+                android:id="@+id/pickFaceImage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:text="Pick Face Images" />
+
+            <Button
+                android:id="@+id/setImages"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:text="Set Images" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/background_shape"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/emp_code"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:hint="Enter Employee Code "
+                android:imeOptions="actionNext" />
+
+            <EditText
+                android:id="@+id/login_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:hint="Enter Login Id"
+                android:imeOptions="actionNext" />
+
+            <EditText
+                android:id="@+id/emp_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:hint="Enter Employee Email"
+                android:imeOptions="actionNext" />
+
+            <EditText
+                android:id="@+id/company_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:hint="Enter Company Id "
+                android:imeOptions="actionNext" />
+
+            <EditText
+                android:id="@+id/emp_dept"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:hint="Enter Employee Department "
+                android:imeOptions="actionDone" />
+
+            <EditText
+                android:id="@+id/emp_name_edttext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:hint="Name"/>
+
+            <EditText
+                android:id="@+id/emp_mob_no_edttext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:hint="Mobile Number"/>
+
+            <EditText
+                android:id="@+id/emp_country_edttext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:hint="Country"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Gender"
+                    android:gravity="center"/>
+
+                <Spinner
+                    android:id="@+id/emp_gender_spinner"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"/>
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/emp_addressline1_edttext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:hint="Address line 1" />
+
+            <EditText
+                android:id="@+id/emp_addressline2_edttext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:hint="Address line 2" />
+
+            <EditText
+                android:id="@+id/emp_zipcode_edttext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:hint="Zipcode"
+                android:inputType="number" />
+
+            <EditText
+                android:id="@+id/emp_spousename_edttext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:hint="Spouse name" />
+
+            <EditText
+                android:id="@+id/emp_no_of_children_edttext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:hint="Number of children"
+                android:inputType="number" />
+
+            <Spinner
+                android:id="@+id/emp_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:visibility="gone"/>
+
+            <Button
+                android:id="@+id/emp_create_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:text="Create Employee"
+                android:visibility="gone"/>
+
+            <Button
+                android:id="@+id/face_match_create_emp_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:text="Face Match(Create Employee)" />
+
+            <CheckBox
+                android:id="@+id/emp_is_final_submit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:checked="false"
+                android:text="Final Submit"/>
+            <CheckBox
+                android:id="@+id/clearFormKey_verifyEmployee"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:checked="true"
+                android:text="Clear Form Key" />
+            <Button
+                android:id="@+id/emp_verify_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:text="Verify Employee" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/background_shape"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/generate_token_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:text="Generate Token" />
+
+            <Button
+                android:id="@+id/verify_token_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:text="Verify Token" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/background_shape"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/scan_barcode_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:text="Scan Barcode" />
+
+            <Button
+                android:id="@+id/signature_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:text="Signature" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/background_shape"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/email_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:hint="Enter Email Id "
+                android:imeOptions="actionNext" />
+
+            <EditText
+                android:id="@+id/mobile_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:hint="Enter Mobile Number"
+                android:imeOptions="actionNext" />
+
+            <Spinner
+                android:id="@+id/notification_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp" />
+
+            <Button
+                android:id="@+id/generate_OTP_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:text="Generate OTP" />
+
+            <EditText
+                android:id="@+id/received_otp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:hint="Enter Received OTP"
+                android:imeOptions="actionNext" />
+
+            <Button
+                android:id="@+id/verify_OTP_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:text="Verify OTP" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/background_shape"
+            android:orientation="vertical">
+
+            <Spinner
+                android:id="@+id/request_response_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp" />
+
+            <Button
+                android:id="@+id/request_response_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:text="Request Response" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/completeOperation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="10dp"
+            android:text="Complete Operation" />
+
+        <Button
+            android:id="@+id/deleteData"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="10dp"
+            android:text="Delete Data" />
+
+        <TextView
+            android:id="@+id/resultTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp" />
+
+        <ImageView
+            android:id="@+id/voice_recording_player"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/play_recording" />
+
+
+        <FrameLayout
+            android:id="@+id/layout_videoView"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center">
+
+            <VideoView
+                android:id="@+id/videoviewMain"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center" />
+
+            <LinearLayout
+                android:id="@+id/layoutButtonPlayPAuse"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_gravity="bottom"
+                android:background="#59000000"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/playPauseButton"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="bottom|center"
+                    android:background="@drawable/play_icon"
+                    android:paddingBottom="3dp" />
+            </LinearLayout>
+        </FrameLayout>
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/view_pager_for_image"
+            android:layout_width="match_parent"
+            android:layout_height="250dp">
+
+        </androidx.viewpager.widget.ViewPager>
+    </LinearLayout>
+
+</ScrollView>
+
