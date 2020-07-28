@@ -166,6 +166,7 @@ public class AccountSetup extends Fragment implements ImageProcessingResponseLis
                             ActivityCompat.requestPermissions(getActivity(), new String[]{Manifest.permission.CAMERA}, 0);
                         }
                     } else {
+                        //API call
                         initializeAccountSetup();
 //                        int productID = 0;
 //                        if (!StringUtil.isEmpty(productId)) {
